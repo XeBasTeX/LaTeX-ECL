@@ -1,0 +1,263 @@
+%% Informations générales
+
+\NeedsTeXFormat{LaTeX2e}[1999/01/01]
+\ProvidesPackage{centrale}[%
+  2018/07/13 v0.29 centrale
+  package (type area)]
+\typeout{%
+  Package typearea, \csname ver@typearea.\@pkgextension\endcsname^^J%
+  \@spaces\@spaces\@spaces\@spaces\space\space
+  Copyright (C) Bastien Laville, 2018^^J%
+}
+
+%------------------------------------------CHARGEMENT DES EXTENSIONS------------------------------------------%
+
+%% Langue utilisée %%
+\RequirePackage[applemac]{inputenc} %Reconnaissance des lettre du clavier
+\RequirePackage[T1]{fontenc}     
+\RequirePackage[francais]{babel} 
+
+
+%% Mise en page %%
+\RequirePackage[a4paper]{geometry}	%mise en page du bidule
+\RequirePackage[final]{microtype} %improves the spacing between words and letters
+\RequirePackage{graphicx}	%import img
+\RequirePackage{booktabs}	%pour introduire des tableaux foukés
+\RequirePackage[toc,page]{appendix}
+%\RequirePackage[Bjornstrup]{fncychap} %Bjornstrup,Lenny
+\RequirePackage{lmodern} 
+\RequirePackage{fancyhdr}	%des titres fouqués
+\RequirePackage{lipsum}		%Mettre du texte lipsum en maquette
+\RequirePackage{framed}		%des cadres pougnés
+
+
+%% Images, figures et Tables %%
+\RequirePackage{epstopdf} 	%Utiliser .eps
+\RequirePackage[pages=some]{background}	%Pour mettre un fond, pages=some permet de choisir els pages concernées
+\RequirePackage{epsfig}	%eps to pdf converter
+\RequirePackage{float}	%pour avoir des tableaux qui restent dans leurs sections
+\RequirePackage{graphicx}	%Importer image
+\RequirePackage{hyperref}	%Importer hypertexte
+\RequirePackage{array}		%Importer tableau
+\RequirePackage{colortbl}		%Couleurs dans le tableau
+
+%% Des sections et des sous-titres %%
+\RequirePackage{titlesec}
+\RequirePackage{sectsty}
+\RequirePackage{caption}
+\RequirePackage{subcaption}
+
+%% Draft %%
+%\RequirePackage{draftwatermark}
+%\SetWatermarkScale{3}
+
+%% Du dessin et des couleurs %%
+\RequirePackage{xcolor}		%changer la couleur
+\RequirePackage[most]{tcolorbox}
+\RequirePackage{tikz}		%Pour dessiner
+\RequirePackage{schemabloc}	%des schémas-blocs
+\RequirePackage[siunitx, american, smartlabels, cute inductors]{circuitikz}		%pour dessiner des circuits électroniques
+\usetikzlibrary{babel}		%Pour éviter que ca déconne
+
+
+%% Des maths %%
+\RequirePackage{listings}		% Importer du code et le travailler
+%\RequirePackage[upright]{fourier}
+\RequirePackage{fouriernc}
+\RequirePackage{amsmath, amssymb, amsfonts, amsthm, mathtools} % mathtools for: Aboxed (put box on last equation in align envirenment)
+\RequirePackage{siunitx}		% Des unités bien écrites pour la physique
+\sisetup{locale = FR}		% Pour avoir les bonnes conventions typo
+
+%% Une biliographie %%
+\bibliographystyle{plain-fr}
+
+\DeclareOption{option}{...}
+\DeclareOption*{...}
+\ProcessOptions
+
+
+%------------------------------------------DÉFINITIONS DES COULEURS------------------------------------------%
+
+
+\definecolor{CentraleRed}{rgb}{0.558,0.09, 0.18}%personal color
+\definecolor{ecl_red}{RGB}{150,23,46}
+\definecolor{CentraleGray}{rgb}{0.67,0.67, 0.67}%personal color
+\definecolor{CentraleBlue}{RGB}{0,67,89}%personal color
+\definecolor{CentraleGrayEq}{RGB}{66,66,66}%personal color
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+
+
+%------------------------------------------SECTIONS, FIGURES ET TABLEAUX------------------------------------------%
+
+\chapterfont{\color{CentraleRed}} % sets colour of chapters
+\sectionfont{\color{CentraleRed}\sffamily}  % sets colour of sections
+\subsectionfont{\color{CentraleRed}\sffamily}  % sets colour of sections
+\DeclareCaptionFont{CaptionCentrale}{\color{CentraleRed}}
+\captionsetup[table]{labelfont={CaptionCentrale,bf}}
+\captionsetup[figure]{labelfont={CaptionCentrale,bf}}
+\captionsetup[subfigure]{labelfont=bf,textfont=sf}
+
+
+%------------------------------------------RACCOURCIS   MATHEMATIQUES------------------------------------------%
+
+%%% Dérivation et opérateurs
+
+\newcommand{\ch}[1] {\mathrm{#1}}
+\newcommand{\dd}{\ensuremath{\, \mathrm{d}}}
+\newcommand{\sub}[1] {\ensuremath{_{\text{#1}}}}
+\renewcommand{\sup}[1] {\ensuremath{^{\text{#1}}}}
+\newcommand{\citea}[1] {$^{\text{\cite{#1}}}$}
+\newcommand{\grad}[1] {\vec{\ch{grad}}\left( #1 \right)}
+\newcommand{\rot}[1] {\vec{\ch{rot}}\left( \vec{#1} \right)}
+\newcommand{\rota}[1] {\vec{\ch{rot}}\left( #1 \right)}
+\renewcommand{\div}[1] {\ch{div}\left( \vec{#1} \right)}
+\newcommand{\diva}[1] {\ch{div}\left( #1 \right)}
+\newcommand{\oper}[3] {\langle #1 \arrowvert #2 \arrowvert #3 \rangle}
+\newcommand{\derp}[2] {\dfrac{\partial\, #1}{\partial\, #2}}
+\newcommand{\derd}[2] {\dfrac{\ch{d}\, #1}{\ch{d}\, #2}}
+\newcommand{\derD}[2] {\dfrac{\ch{D}\, #1}{\ch{D}\, #2}}
+\newcommand{\derda}[2] {\dfrac{\ch{d}^2\, #1}{\ch{d} #2^2}}
+\newcommand{\derdb}[2] {\dfrac{\ch{d}^2\, #1}{\ch{d} #2 ^2}}
+\newcommand{\derpb}[2] {\dfrac{\partial^2\, #1}{\partial #2 ^2}}
+\newcommand{\ket}[1] {| #1 \rangle}
+\newcommand{\bra}[1] {\langle #1 |}
+\newcommand{\bracket}[1] {\langle #1 \rangle}
+\newcommand{\bracketb}[2] {\langle #1 \arrowvert #2 \rangle}
+\newcommand{\bracketc}[1] {\langle #1 \arrowvert #1 \rangle}
+
+%%% Lettres grecques dispo dans le texte %%%
+
+\newcommand{\ttt} {\ensuremath{\forall}}
+\newcommand{\alphat} {\ensuremath{\alpha}}
+\newcommand{\betat} {\ensuremath{\beta}}
+\newcommand{\taut} {\ensuremath{\tau}}
+\newcommand{\nut} {\ensuremath{\nu}}
+\newcommand{\varepsilont} {\ensuremath{\varepsilon}}
+\newcommand{\epsilont} {\ensuremath{\varepsilon}}
+\newcommand{\omegat} {\ensuremath{\omega}}
+\newcommand{\phit} {\ensuremath{\varphi}}
+\newcommand{\deltat} {\ensuremath{\delta}}
+\newcommand{\Deltat} {\ensuremath{\Delta}}
+\newcommand{\thetat} {\ensuremath{\theta}}
+\newcommand{\sigmat} {\ensuremath{\sigma}}
+\newcommand{\pit} {\ensuremath{\pi} }
+\newcommand{\chit} {\ensuremath{\chi}}
+\newcommand{\mut} {\ensuremath{\mu}}
+\newcommand{\lambdat} {\ensuremath{\lambda}}
+\newcommand{\rhot} {\ensuremath{\rho}}
+\newcommand{\kappat} {\ensuremath{\kappa}}
+\newcommand{\gammat} {\ensuremath{\gamma}}
+\newcommand{\etat} {\ensuremath{\eta}}
+\newcommand{\A} {\ensuremath{\mathcal{A}}}
+
+
+%%% Raccourcis du turfu %%%
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\vr}{\overrightarrow}
+
+%%% Notation des ensembles %%%
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\Lens}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\Pens}{\mathcal{P}}
+\newcommand{\dom}{\mathcal{D}}
+\newcommand{\surf}{\mathcal{S}}
+\newcommand{\cont}{\mathcal{C}}
+
+
+%%% Fonctions du traitement du signal %%%
+
+\newcommand{\eqdef}{\stackrel{\mathrm{def}}{=}}
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+\newcommand{\ud}{\, \mathrm{d}}
+\newcommand{\vect}{\text{Vect}}
+\newcommand{\sinc}{\ensuremath{\mathrm{sinc}}}
+\newcommand{\esp}{\ensuremath{\mathbb{E}}}
+\newcommand{\hilbert}{\ensuremath{\mathcal{H}}}
+\newcommand{\fourier}{\ensuremath{\mathcal{F}}}
+\newcommand{\sgn}{\text{sgn}}
+\DeclareFontFamily{U}{wncy}{}
+\DeclareFontShape{U}{wncy}{m}{n}{<->wncyr10}{}
+\DeclareSymbolFont{mcy}{U}{wncy}{m}{n}
+\DeclareMathSymbol{\Sh}{\mathord}{mcy}{"58} 	%ces 4 lignes définissent la lettre sha pour le peigne de Dirac
+
+%%% Autres %%%
+
+\newcommand{\x}{\times}
+%\def\ointint{\begingroup
+%   \displaystyle
+%\unitlength 1pt
+%\int\mkern-7.2mu
+%\begin{picture}(0,3)\put(0,3){\oval
+%   (10,8)}\end{picture}
+%\mkern-7mu\int\endgroup}
+%\def\grad{\overrightarrow{\textnormal{grad}}}
+
+
+
+
+%------------------------------------------METTRE DU CODE INFORMATIQUE------------------------------------------%
+
+
+\lstset{language=Python,%
+    basicstyle=\footnotesize,
+    breaklines=false,%,
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{CentraleRed},
+    commentstyle=\color{CentraleGray},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+
+\lstset{language=Matlab,                        % Use MATLAB
+        frame=single,                           % Single frame around code
+        basicstyle=\small\ttfamily,             % Use small true type font
+        keywordstyle=[1]\color{blue}\bfseries,        % MATLAB functions bold and blue
+        keywordstyle=[2]\color{mylilas},         % MATLAB function arguments purple
+        keywordstyle=[3]\color{blue}\underbar,  % User functions underlined and blue
+        identifierstyle=,                       % Nothing special about identifiers
+                                                % Comments small green courier
+        commentstyle=\usefont{T1}{pcr}{m}{sl}\color{mygreen}\small,
+        stringstyle=\color{CentraleRed},             % Strings are purple
+        breaklines=true,
+        showstringspaces=false,                 % Don't put marks in string spaces
+        tabsize=5,                              % 5 spaces per tab
+        title=\lstname,
+        framextopmargin=2pt,
+    framexbottommargin=2pt,
+        %
+        %%% Put standard MATLAB functions not included in the default
+        %%% language here
+        morekeywords={xlim,ylim,var,alpha,factorial,poissrnd,normpdf,normcdf},
+        %
+        %%% Put MATLAB function parameters here
+        morekeywords=[2]{on, off, interp},
+        %
+        %%% Put user defined functions here
+        morekeywords=[3]{FindESS, homework_example},
+        %
+        morecomment=[l][\color{blue}]{...},     % Line continuation (...) like blue comment
+        numbers=left,                           % Line numbers on left
+        firstnumber=1,                          % Line numbers start with line 1
+        numberstyle=\tiny\color{CentraleRed},          % Line numbers are blue
+        stepnumber=5                            % Line numbers go in steps of 5
+        }
+
+
+
+%% Fin du package
+\endinput
