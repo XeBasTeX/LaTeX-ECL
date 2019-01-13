@@ -1,5 +1,7 @@
 # LaTeX-ECL
-Package LaTeX de l'ECL
+[![](https://img.shields.io/badge/donate-paypal-46AFE0.svg)](https://www.paypal.me/bastienlaville)
+
+### Package LaTeX de l'ECL
 
 Correctifs à apporter :
 - terminer le setup du siunitx, clarifier l'usage ;
