@@ -7,9 +7,9 @@
 ### Package LaTeX de l'ECL
 
 Correctifs à apporter :
-- [] terminer le setup du siunitx, clarifier l'usage ;
-- [] faire un environnement pour les parties particulières du rapport (e.g. la page résumé) ;
-- [] faire la mise en page ;
-- [] faire une documentation ;
-- [] refaire les header ;
-- [] mettre en ordre le code par section.
+- [ ] terminer le setup du siunitx, clarifier l'usage ;
+- [ ] faire un environnement pour les parties particulières du rapport (e.g. la page résumé) ;
+- [ ] faire la mise en page ;
+- [ ] faire une documentation ;
+- [ ] refaire les header ;
+- [ ] mettre en ordre le code par section.
