@@ -14,10 +14,10 @@ Correctifs à apporter :
 - refaire les header ;
 - mettre en ordre le code par section.
 
-### Distribution et license
-
-MIT
-
 ### À propos des auteurs
 
 Auteur : Bastien Laville
+
+### Distribution et license
+
+MIT © Bastien
