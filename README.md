@@ -16,7 +16,7 @@ Correctifs à apporter :
 
 ### À propos des auteurs
 
-Auteur : Bastien Laville
+Auteur : Bastien
 
 ### Distribution et license
 
