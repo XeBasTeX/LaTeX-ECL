@@ -6,9 +6,6 @@
 
 ### Package LaTeX de l'ECL
 
-> Auteur : Bastien Laville
-> --- Relecture : Yann Zerrouk
-
 Correctifs à apporter :
 - terminer le setup du siunitx, clarifier l'usage ;
 - faire un environnement pour les parties particulières du rapport (e.g. la page résumé) ;
@@ -16,3 +13,11 @@ Correctifs à apporter :
 - faire une documentation ;
 - refaire les header ;
 - mettre en ordre le code par section.
+
+### Distribution et license
+
+MIT
+
+### À propos des auteurs
+
+Auteur : Bastien Laville
