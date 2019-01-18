@@ -5,10 +5,6 @@
 ![](https://img.shields.io/github/license/XeBasTeX/LaTeX-ECL.svg)
 ![](https://img.shields.io/github/languages/code-size/XeBasTeX/LaTeX-ECL.svg)
 
-### Description
-
-Package LaTeX de l'ECL
-
 Correctifs à apporter :
 - terminer le setup du siunitx, clarifier l'usage ;
 - faire un environnement pour les parties particulières du rapport (e.g. la page résumé) ;
@@ -16,6 +12,17 @@ Correctifs à apporter :
 - faire une documentation ;
 - refaire les header ;
 - mettre en ordre le code par section.
+
+## Installation
+
+
+
+## Commandes utiles
+
+
+## Comment contribuer ?
+
+Envoie moi ton code frr
 
 ## Crédits
 
