@@ -4,7 +4,9 @@
 ![](https://img.shields.io/github/license/XeBasTeX/LaTeX-ECL.svg)
 ![](https://img.shields.io/github/languages/code-size/XeBasTeX/LaTeX-ECL.svg)
 
-## Package LaTeX de l'ECL
+### Description
+
+Package LaTeX de l'ECL
 
 Correctifs à apporter :
 - terminer le setup du siunitx, clarifier l'usage ;
