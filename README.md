@@ -4,7 +4,7 @@
 ![](https://img.shields.io/github/license/XeBasTeX/LaTeX-ECL.svg)
 ![](https://img.shields.io/github/languages/code-size/XeBasTeX/LaTeX-ECL.svg)
 
-### Package LaTeX de l'ECL
+## Package LaTeX de l'ECL
 
 Correctifs à apporter :
 - terminer le setup du siunitx, clarifier l'usage ;
@@ -14,10 +14,15 @@ Correctifs à apporter :
 - refaire les header ;
 - mettre en ordre le code par section.
 
-### À propos des auteurs
+## Crédits
+
+Je tiens à remercier en particulier
+
+
+## À propos des auteurs
 
 Auteur : Bastien
 
-### Distribution et license
+## Distribution et license
 
 MIT © Bastien
