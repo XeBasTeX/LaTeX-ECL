@@ -3,24 +3,34 @@
 \NeedsTeXFormat{LaTeX2e}[1999/01/01]
 \ProvidesPackage{centrale}[%
   2018/07/13 v0.30 centrale
-  package (type area)]
+  package (centrale)]
 \typeout{%
-  Package typearea, \csname ver@typearea.\@pkgextension\endcsname^^J%
+  Paquet de Centrale Lyon, \csname ver@centrale.\@pkgextension\endcsname^^J%
   \@spaces\@spaces\@spaces\@spaces\space\space
   Copyright (C) Bastien Laville, 2019^^J%
 }
 
-%------------------------------------------CHARGEMENT DES EXTENSIONS------------------------------------------%
+%------------------------------------------ CHARGEMENT DES EXTENSIONS ------------------------------------------%
 
-%% Langue utilisée %%
+% -------------  Langue utilisée ------------- 
 \RequirePackage[utf8]{inputenc} %Reconnaissance des lettre du clavier
 \RequirePackage[T1]{fontenc}     
-\RequirePackage[francais]{babel} 
+\RequirePackage[french]{babel} 
 
 
-%% Mise en page %%
+% -------------  Mise en page ------------- 
 \RequirePackage[a4paper]{geometry}	% mise en page acceptable
 \RequirePackage[final]{microtype} % pour améliorer la qualité du texte avec la microtypo
+\RequirePackage{hyperref}
+ \hypersetup{pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdfnewwindow=true,      % links in new PDF window
+    pdfcreator={Paquet Centrale Lyon (B. Laville)}}
+
+
+% -------------  Mise en page 2 ------------- 
 \RequirePackage{graphicx}	% pour importer des images
 \RequirePackage{booktabs}	% pour introduire des tableaux
 \RequirePackage[toc,page]{appendix}
@@ -30,18 +40,26 @@
 \RequirePackage{lipsum}		% mettre du texte lipsum en maquette
 \RequirePackage{framed}		% des cadres pougnés
 
+% ------------- En-têtes ------------- 
+\renewcommand{\baselinestretch}{1.05}
+\setlength{\headheight}{27.06pt}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\nouppercase{\thepage}}
+\lhead{\nouppercase{\rightmark}}
 
-%% Images, figures et Tables %%
-\RequirePackage{epstopdf} 	%Utiliser .eps
-\RequirePackage[pages=some]{background}	%Pour mettre un fond, pages=some permet de choisir els pages concernées
-\RequirePackage{epsfig}	%eps to pdf converter
-\RequirePackage{float}	%pour avoir des tableaux qui restent dans leurs sections
-\RequirePackage{graphicx}	%Importer image
-\RequirePackage{hyperref}	%Importer hypertexte
-\RequirePackage{array}		%Importer tableau
-\RequirePackage{colortbl}		%Couleurs dans le tableau
+% ------------- Images, figures et tables ------------- 
+\RequirePackage{epstopdf} 	% utiliser .eps
+\RequirePackage[pages=some]{background}	% pour mettre un fond, pages=some permet de choisir els pages concernées
+\RequirePackage{epsfig}	% eps to pdf converter
+\RequirePackage{float}	% pour avoir des tableaux qui restent dans leurs sections
+\RequirePackage{graphicx}	% mporter image
+\RequirePackage{hyperref}	% importer hypertexte
+\RequirePackage{array}		% importer tableau
+\RequirePackage{colortbl}		% couleurs dans le tableau
 
-%% Des sections et des sous-titres %%
+% ------------- Des sections et des sous-titres ------------- 
 \RequirePackage{titlesec}
 \RequirePackage{sectsty}
 \RequirePackage{caption}
@@ -51,23 +69,24 @@
 %\RequirePackage{draftwatermark}
 %\SetWatermarkScale{3}
 
-%% Du dessin et des couleurs %%
+% ------------- Du dessin et des couleurs ------------- 
 \RequirePackage{xcolor}		% changer la couleur
 \RequirePackage[most]{tcolorbox}
 \RequirePackage{tikz}		% pour dessiner
-\RequirePackage{schemabloc}	%des schémas-blocs
+\RequirePackage{schemabloc}	% des schémas-blocs
 \RequirePackage[siunitx, american, smartlabels, cute inductors]{circuitikz}		% pour dessiner des circuits électroniques
 \usetikzlibrary{babel}		% pour éviter des conflits entre paquets
 
 
-%% Des maths %%
+% ------------- Des maths ------------- 
 \RequirePackage{listings}		% Importer du code informatique et le travailler
-\RequirePackage{fouriernc}
+%\RequirePackage{fouriernc}
+\RequirePackage{mathpazo}
 \RequirePackage{amsmath, amssymb, amsfonts, amsthm, mathtools} % mathtools for: Aboxed (put box on last equation in align envirenment)
 \RequirePackage{siunitx}		% Des unités bien écrites pour la physique
 \sisetup{locale = FR}		% Pour avoir les bonnes conventions typo
 
-%% Une biliographie %%
+% ------------- Une biliographie ------------- 
 \bibliographystyle{plain-fr}
 
 \DeclareOption{option}{...}
