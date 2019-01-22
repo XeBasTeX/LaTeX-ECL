@@ -2,33 +2,33 @@
 
 \NeedsTeXFormat{LaTeX2e}[1999/01/01]
 \ProvidesPackage{centrale}[%
-  2018/07/13 v0.29 centrale
+  2018/07/13 v0.30 centrale
   package (type area)]
 \typeout{%
   Package typearea, \csname ver@typearea.\@pkgextension\endcsname^^J%
   \@spaces\@spaces\@spaces\@spaces\space\space
-  Copyright (C) Bastien Laville, 2018^^J%
+  Copyright (C) Bastien Laville, 2019^^J%
 }
 
 %------------------------------------------CHARGEMENT DES EXTENSIONS------------------------------------------%
 
 %% Langue utilisée %%
-\RequirePackage[applemac]{inputenc} %Reconnaissance des lettre du clavier
+\RequirePackage[utf8]{inputenc} %Reconnaissance des lettre du clavier
 \RequirePackage[T1]{fontenc}     
 \RequirePackage[francais]{babel} 
 
 
 %% Mise en page %%
-\RequirePackage[a4paper]{geometry}	%mise en page du bidule
-\RequirePackage[final]{microtype} %improves the spacing between words and letters
-\RequirePackage{graphicx}	%import img
-\RequirePackage{booktabs}	%pour introduire des tableaux foukés
+\RequirePackage[a4paper]{geometry}	% mise en page acceptable
+\RequirePackage[final]{microtype} % pour améliorer la qualité du texte avec la microtypo
+\RequirePackage{graphicx}	% pour importer des images
+\RequirePackage{booktabs}	% pour introduire des tableaux
 \RequirePackage[toc,page]{appendix}
 %\RequirePackage[Bjornstrup]{fncychap} %Bjornstrup,Lenny
 \RequirePackage{lmodern} 
-\RequirePackage{fancyhdr}	%des titres fouqués
-\RequirePackage{lipsum}		%Mettre du texte lipsum en maquette
-\RequirePackage{framed}		%des cadres pougnés
+\RequirePackage{fancyhdr}	% des titres fouqués
+\RequirePackage{lipsum}		% mettre du texte lipsum en maquette
+\RequirePackage{framed}		% des cadres pougnés
 
 
 %% Images, figures et Tables %%
@@ -52,17 +52,16 @@
 %\SetWatermarkScale{3}
 
 %% Du dessin et des couleurs %%
-\RequirePackage{xcolor}		%changer la couleur
+\RequirePackage{xcolor}		% changer la couleur
 \RequirePackage[most]{tcolorbox}
-\RequirePackage{tikz}		%Pour dessiner
+\RequirePackage{tikz}		% pour dessiner
 \RequirePackage{schemabloc}	%des schémas-blocs
-\RequirePackage[siunitx, american, smartlabels, cute inductors]{circuitikz}		%pour dessiner des circuits électroniques
-\usetikzlibrary{babel}		%Pour éviter que ca déconne
+\RequirePackage[siunitx, american, smartlabels, cute inductors]{circuitikz}		% pour dessiner des circuits électroniques
+\usetikzlibrary{babel}		% pour éviter des conflits entre paquets
 
 
 %% Des maths %%
-\RequirePackage{listings}		% Importer du code et le travailler
-%\RequirePackage[upright]{fourier}
+\RequirePackage{listings}		% Importer du code informatique et le travailler
 \RequirePackage{fouriernc}
 \RequirePackage{amsmath, amssymb, amsfonts, amsthm, mathtools} % mathtools for: Aboxed (put box on last equation in align envirenment)
 \RequirePackage{siunitx}		% Des unités bien écrites pour la physique
@@ -78,14 +77,10 @@
 
 %------------------------------------------DÉFINITIONS DES COULEURS------------------------------------------%
 
-
 \definecolor{CentraleRed}{rgb}{0.558,0.09, 0.18}%personal color
-\definecolor{ecl_red}{RGB}{150,23,46}
 \definecolor{CentraleGray}{rgb}{0.67,0.67, 0.67}%personal color
 \definecolor{CentraleBlue}{RGB}{0,67,89}%personal color
 \definecolor{CentraleGrayEq}{RGB}{66,66,66}%personal color
-\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
-\definecolor{mylilas}{RGB}{170,55,241}
 
 
 %------------------------------------------SECTIONS, FIGURES ET TABLEAUX------------------------------------------%
@@ -101,12 +96,12 @@
 
 %------------------------------------------RACCOURCIS   MATHEMATIQUES------------------------------------------%
 
-%%% Dérivation et opérateurs
+%------- Dérivation et opérateurs
 
 \newcommand{\ch}[1] {\mathrm{#1}}
-\newcommand{\dd}{\ensuremath{\, \mathrm{d}}}
-\newcommand{\sub}[1] {\ensuremath{_{\text{#1}}}}
-\renewcommand{\sup}[1] {\ensuremath{^{\text{#1}}}}
+\newcommand{\ud}{\ensuremath{\, \mathrm{d}}}
+\newcommand{\subt}[1] {\ensuremath{_{\text{#1}}}}
+\renewcommand{\supt}[1] {\ensuremath{^{\text{#1}}}}
 \newcommand{\citea}[1] {$^{\text{\cite{#1}}}$}
 \newcommand{\grad}[1] {\vec{\ch{grad}}\left( #1 \right)}
 \newcommand{\rot}[1] {\vec{\ch{rot}}\left( \vec{#1} \right)}
@@ -120,13 +115,13 @@
 \newcommand{\derda}[2] {\dfrac{\ch{d}^2\, #1}{\ch{d} #2^2}}
 \newcommand{\derdb}[2] {\dfrac{\ch{d}^2\, #1}{\ch{d} #2 ^2}}
 \newcommand{\derpb}[2] {\dfrac{\partial^2\, #1}{\partial #2 ^2}}
-\newcommand{\ket}[1] {| #1 \rangle}
 \newcommand{\bra}[1] {\langle #1 |}
+\newcommand{\ket}[1] {| #1 \rangle}
 \newcommand{\bracket}[1] {\langle #1 \rangle}
 \newcommand{\bracketb}[2] {\langle #1 \arrowvert #2 \rangle}
 \newcommand{\bracketc}[1] {\langle #1 \arrowvert #1 \rangle}
 
-%%% Lettres grecques dispo dans le texte %%%
+%------- Lettres grecques disponibles dans le texte
 
 \newcommand{\ttt} {\ensuremath{\forall}}
 \newcommand{\alphat} {\ensuremath{\alpha}}
@@ -149,16 +144,17 @@
 \newcommand{\kappat} {\ensuremath{\kappa}}
 \newcommand{\gammat} {\ensuremath{\gamma}}
 \newcommand{\etat} {\ensuremath{\eta}}
-\newcommand{\A} {\ensuremath{\mathcal{A}}}
 
 
-%%% Raccourcis du turfu %%%
+
+%------- Raccourcis du turfu
 
 \newcommand{\ds}{\displaystyle}
 \newcommand{\vr}{\overrightarrow}
 
-%%% Notation des ensembles %%%
+%------- Notation des ensembles
 
+\newcommand{\A} {\ensuremath{\mathcal{A}}}
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\N}{\mathbb{N}}
@@ -172,12 +168,11 @@
 \newcommand{\cont}{\mathcal{C}}
 
 
-%%% Fonctions du traitement du signal %%%
+%------- Fonctions du traitement du signal
 
 \newcommand{\eqdef}{\stackrel{\mathrm{def}}{=}}
 \newcommand{\argmax}{\operatornamewithlimits{argmax}}
 \newcommand{\argmin}{\operatornamewithlimits{argmin}}
-\newcommand{\ud}{\, \mathrm{d}}
 \newcommand{\vect}{\text{Vect}}
 \newcommand{\sinc}{\ensuremath{\mathrm{sinc}}}
 \newcommand{\esp}{\ensuremath{\mathbb{E}}}
@@ -189,19 +184,7 @@
 \DeclareSymbolFont{mcy}{U}{wncy}{m}{n}
 \DeclareMathSymbol{\Sh}{\mathord}{mcy}{"58} 	%ces 4 lignes définissent la lettre sha pour le peigne de Dirac
 
-%%% Autres %%%
-
-\newcommand{\x}{\times}
-%\def\ointint{\begingroup
-%   \displaystyle
-%\unitlength 1pt
-%\int\mkern-7.2mu
-%\begin{picture}(0,3)\put(0,3){\oval
-%   (10,8)}\end{picture}
-%\mkern-7mu\int\endgroup}
-%\def\grad{\overrightarrow{\textnormal{grad}}}
-
-
+%------- Autres
 
 
 %------------------------------------------METTRE DU CODE INFORMATIQUE------------------------------------------%
@@ -238,7 +221,7 @@
         tabsize=5,                              % 5 spaces per tab
         title=\lstname,
         framextopmargin=2pt,
-    framexbottommargin=2pt,
+        framexbottommargin=2pt,
         %
         %%% Put standard MATLAB functions not included in the default
         %%% language here
