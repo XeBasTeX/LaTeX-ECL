@@ -1,0 +1,144 @@
+\documentclass[a4paper,12pt,french]{article}
+
+\usepackage{centrale}
+
+
+\hypersetup{
+    pdftitle={Titre},    % title
+    pdfauthor={Auteur},     % author
+    pdfsubject={Sujet},   % subject of the document
+    pdfproducer={Conversion PDF}, % producer of the document
+    pdfkeywords={Quelques mots-clés} % list of keywords
+}
+
+\DeclareGraphicsRule{.ai}{pdf}{.ai}{} %Pour du vectoriel
+\graphicspath{ {./img/} {./eps/}}
+
+
+% ------------- Packages de dernière minute ------------- 
+
+\usepackage{array}
+\usepackage{bm}
+\usepackage{multirow}
+\usepackage[footnote]{acronym}
+
+\begin{document}
+
+
+
+% --------------------------------------------------------------
+%                       Page de garde
+% --------------------------------------------------------------
+
+\begin{titlepage}
+\begin{center}
+
+\includegraphics[width=1\textwidth]{logo_ECL_rectangle_quadri_vectoriel.ai}\\[1cm]
+
+{\large Intitulé de la filière, domaine ou approfondissement}\\[0.5cm]
+
+{\large Type de projet}\\[0.5cm]
+
+% Title
+\rule{\linewidth}{0.5mm} \\[0.4cm]
+{ \huge \bfseries Titre du rapport éventuellement en plusieurs lignes \\[0.4cm] }
+\rule{\linewidth}{0.5mm} \\[1.5cm]
+
+% Author and supervisor
+\noindent
+\begin{minipage}{0.4\textwidth}
+  \begin{flushleft} \large
+    \emph{Auteurs :}\\
+    M. Prénom \textsc{Nom}\\
+    M. Prénom \textsc{Nom}\\
+    M\up{me} Prénom \textsc{Nom}\\
+    M. Prénom \textsc{Nom}
+  \end{flushleft}
+\end{minipage}%
+\begin{minipage}{0.4\textwidth}
+  \begin{flushright} \large
+    \emph{Encadrants :} \\
+    Pr.~Prénom \textsc{Nom}\\
+    Dr.~Prénom \textsc{Nom}
+  \end{flushright}
+\end{minipage}
+
+\vfill
+
+% Bottom of the page
+{\large Version 0.1 du\\ \today}
+
+\end{center}
+\end{titlepage}
+
+% --------------------------------------------------------------
+%                    Tables des matières 
+% --------------------------------------------------------------
+
+\thispagestyle{empty}
+\tableofcontents
+%\newpage
+
+% --------------------------------------------------------------
+%                         Début du corps
+% --------------------------------------------------------------
+
+\section{Introduction}
+
+
+\newpage
+\section{Une partie}
+
+\subsection{Une sous-partie}
+
+\lipsum[1]
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[scale=0.35]{example-image-a}
+    \caption{Dessin du pont en coupe longitudinale.}
+    \label{fig:coupe-pont}
+
+\end{figure}
+
+
+
+% --------------------------------------------------------------
+%                            Statique
+% --------------------------------------------------------------
+
+
+
+% --------------------------------------------------------------
+%                            Conclusion
+% --------------------------------------------------------------
+
+\section{Conclusion}
+
+
+
+
+% --------------------------------------------------------------
+%                            Abstract
+% --------------------------------------------------------------
+\newpage
+\thispagestyle{empty}
+
+\vspace*{\fill}
+\noindent\rule[2pt]{\textwidth}{0.5pt}\\
+{\textbf{Résumé :}}
+\lipsum[1]
+
+{\textbf{Mots clés :}}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor.
+\\
+\noindent\rule[2pt]{\textwidth}{0.5pt}
+\begin{center}
+  École centrale de Lyon\\
+  36, Avenue Guy de Collongue\\
+  code du labo concerné\\
+  69134 Écully
+\end{center}
+\vspace*{\fill}
+
+\end{document}
