@@ -34,7 +34,7 @@ Je tiens à remercier en particulier :
 
 ## À propos des auteurs
 
-Auteur : Bastien Laville (président de la PAO mandat 2018 - 2019)
+Bastien Laville (président de la PAO mandat 2018 - 2019)
 
 ## Distribution et license
 
