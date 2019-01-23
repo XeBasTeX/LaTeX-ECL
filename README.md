@@ -23,17 +23,19 @@ Correctifs à apporter :
 
 ## Comment contribuer ?
 
-Envoie moi ton code frr
+Vous pouvez m'envoyer vos suggestions à mon adresse centralienne, en me cherchant depuis l'annuaire de Zimbra.
 
 ## Crédits
 
-Je tiens à remercier en particulier
-
+Je tiens à remercier en particulier :
+- Achtung, dont la première feuille de style a fourni une excellente base pour la suite ;
+- Govi dont le rapport de PAr a permis de tirer quelques *features* intéressantes ;
+- les bêta-testeurs du code, à savoir personne.
 
 ## À propos des auteurs
 
-Auteur : Bastien
+Auteur : Bastien Laville (président de la PAO mandat 2018 - 2019)
 
 ## Distribution et license
 
-MIT © Bastien
+MIT © Bastien Laville
