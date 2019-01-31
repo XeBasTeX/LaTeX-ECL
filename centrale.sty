@@ -93,8 +93,9 @@
 \definecolor{CentraleGray}{rgb}{0.67,0.67, 0.67}
 \definecolor{CentraleBlue}{RGB}{0,67,89}
 \definecolor{CentraleGrayEq}{RGB}{66,66,66}
-\definecolor{mygreen}{RGB}{28,172,0} % pour le listing des codes
-\definecolor{mylilas}{RGB}{170,55,241}
+\definecolor{matlabGreen}{RGB}{28,172,0} % pour le listing des codes
+\definecolor{matlabLilas}{RGB}{170,55,241}
+
 
 %------------------------------------------SECTIONS, FIGURES ET TABLEAUX------------------------------------------%
 
@@ -223,12 +224,12 @@
         frame=single,                           % Single frame around code
         basicstyle=\small\ttfamily,             % Use small true type font
         keywordstyle=[1]\color{blue}\bfseries,        % MATLAB functions bold and blue
-        keywordstyle=[2]\color{mylilas},         % MATLAB function arguments purple
+        keywordstyle=[2]\color{matlabLilas},         % MATLAB function arguments purple
         keywordstyle=[3]\color{blue}\underbar,  % User functions underlined and blue
         identifierstyle=,                       % Nothing special about identifiers
                                                 % Comments small green courier
-        commentstyle=\usefont{T1}{pcr}{m}{sl}\color{mygreen}\small,
-        stringstyle=\color{CentraleRed},             % Strings are purple
+        commentstyle=\usefont{T1}{pcr}{m}{sl}\color{matlabGreen}\small,
+        stringstyle=\color{matlabLilas},             % Strings are purple
         breaklines=true,
         showstringspaces=false,                 % Don't put marks in string spaces
         tabsize=5,                              % 5 spaces per tab
