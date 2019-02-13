@@ -20,6 +20,7 @@ Correctifs à apporter :
 ## Commandes utiles
 
 ```\derd{f}{x}```permet de taper une dérivée droite de la fonction ```f```par rapport à ```x```
+
 ```\derp{f}{x}```permet de taper une dérivée partielle de la fonction ```f```par rapport à ```x```
 
 ## Comment contribuer ?
