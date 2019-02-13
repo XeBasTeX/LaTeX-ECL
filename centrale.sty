@@ -8,32 +8,34 @@
 %------------------------------------------ CHARGEMENT DES EXTENSIONS ------------------------------------------%
 
 % -------------  Langue utilisée ------------- 
-\RequirePackage[utf8]{inputenc} %Reconnaissance des lettre du clavier
+\RequirePackage[utf8]{inputenc} % Reconnaissance des lettre du clavier
 \RequirePackage[T1]{fontenc}     
 \RequirePackage[frenchb]{babel} 
 
 
 % -------------  Mise en page ------------- 
-\RequirePackage[a4paper]{geometry}	% mise en page acceptable
-\RequirePackage[final]{microtype} % pour améliorer la qualité du texte avec la microtypo
+\RequirePackage[a4paper]{geometry}	% Mise en page acceptable
+\RequirePackage[final]{microtype} % Pour améliorer la qualité du texte avec la microtypo
 \RequirePackage{hyperref}
+\RequirePackage{mathpazo} % La police utilisée dans tout le document
  \hypersetup{pdftoolbar=true,        % show Acrobat’s toolbar?
     pdfmenubar=true,        % show Acrobat’s menu?
     pdffitwindow=false,     % window fit to page when opened
     pdfstartview={FitH},    % fits the width of the page to the window
     pdfnewwindow=true,      % links in new PDF window
     pdfcreator={Paquet Centrale Lyon (B. Laville)}}
-\newcommand{\reff}[1]{\textbf{\textcolor{CentraleRed}{\textsc{\ref{#1}}}}}  % pour réaliser des citations potables
+\newcommand{\reff}[1]{\textbf{\textcolor{CentraleRed}{\textsc{\ref{#1}}}}}  % Pour réaliser des citations potables
 
 % -------------  Mise en page 2 ------------- 
 \RequirePackage{graphicx}	% pour importer des images
 \RequirePackage{booktabs}	% pour introduire des tableaux
 \RequirePackage[toc,page]{appendix}
-%\RequirePackage[Bjornstrup]{fncychap} %Bjornstrup,Lenny
+%\RequirePackage[Bjornstrup]{fncychap} % si on fait un report ou book
 \RequirePackage{lmodern} 
 \RequirePackage{fancyhdr}	% des titres fouqués
 \RequirePackage{lipsum}		% mettre du texte lipsum en maquette
 \RequirePackage{framed}		% des cadres pougnés
+\RequirePackage{bm} % Du texte en gras bien mis
 
 % ------------- En-têtes ------------- 
 \renewcommand{\baselinestretch}{1.05}
@@ -53,6 +55,9 @@
 \RequirePackage{hyperref}	% importer hypertexte
 \RequirePackage{array}		% importer tableau
 \RequirePackage{colortbl}		% couleurs dans le tableau
+\RequirePackage{array} % Pour des tableaux bien formaté
+\RequirePackage{multirow} % Fusion des lignes dans les tableaux
+\RequirePackage[footnote]{acronym} % Des acronymes accessibles et définissables
 
 % ------------- Des sections et des sous-titres ------------- 
 \RequirePackage{titlesec}
@@ -70,13 +75,12 @@
 \RequirePackage{tikz}		% pour dessiner
 \RequirePackage{schemabloc}	% des schémas-blocs
 \RequirePackage[siunitx, american, smartlabels, cute inductors]{circuitikz}		% pour dessiner des circuits électroniques
-\usetikzlibrary{babel}		% pour éviter des conflits entre paquets
+\usetikzlibrary{babel}		% pour éviter des conflits entre paquets tikz et babel
 
 
 % ------------- Des maths ------------- 
 \RequirePackage{listings}		% Importer du code informatique et le travailler
 %\RequirePackage{fouriernc}
-\RequirePackage{mathpazo}
 \RequirePackage{amsmath, amssymb, amsfonts, amsthm, mathtools} % mathtools for: Aboxed (put box on last equation in align envirenment)
 \RequirePackage{siunitx}		% Des unités bien écrites pour la physique
 \sisetup{locale = FR}		% Pour avoir les bonnes conventions typo
