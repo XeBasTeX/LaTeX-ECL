@@ -36,7 +36,7 @@ Je tiens à remercier en particulier :
 
 ## À propos des auteurs
 
-Bastien Laville (président de la PAO mandat 2018 - 2019)
+Bastien Laville dit le Makzer (président de la PAO mandat 2018 - 2019)
 
 ## Distribution et license
 
