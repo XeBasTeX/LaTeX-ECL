@@ -25,11 +25,11 @@ Insérer une image
 
 ### Macros
 
-```\ud```permet d'écrire propement une différentielle dnas une intégrale, par exemple ```\int f(x) \ud x```
+```\ud``` permet d'écrire propement une différentielle dans une intégrale, par exemple ```\int f(x) \ud x```
 
-```\derd{f}{x}```permet de taper une dérivée droite de la fonction ```f```par rapport à ```x```
+```\derd{f}{x}``` permet de taper une dérivée droite de la fonction ```f```par rapport à ```x```
 
-```\derp{f}{x}```permet de taper une dérivée partielle de la fonction ```f```par rapport à ```x```
+```\derp{f}{x}``` permet de taper une dérivée partielle de la fonction ```f```par rapport à ```x```
 
 ## Comment contribuer ?
 
