@@ -15,9 +15,17 @@ Correctifs à apporter :
 
 ## Installation
 
-
+Télécharger le dossier, le placer dans le sous-dossier de votre choix et modifier uniquement le fichier ```rapport.tex```
 
 ## Commandes utiles
+
+# Opérations basiques
+
+Insérer une image
+
+# Macros
+
+```\ud```permet d'écrire propement une différentielle dnas une intégrale, par exemple ```\int f(x) \ud x```
 
 ```\derd{f}{x}```permet de taper une dérivée droite de la fonction ```f```par rapport à ```x```
 
@@ -30,7 +38,7 @@ Vous pouvez m'envoyer vos suggestions à mon adresse centralienne, en me chercha
 ## Crédits
 
 Je tiens à remercier en particulier :
-- Achtung, dont la première feuille de style a fourni une excellente base pour la suite ;
+- Hachtung, dont la première feuille de style a fourni une excellente base pour la suite ;
 - Govi dont le rapport de PAr a permis de tirer quelques *features* intéressantes ;
 - les bêta-testeurs du code, à savoir personne.
 
