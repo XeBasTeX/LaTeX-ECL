@@ -19,11 +19,11 @@ Télécharger le dossier, le placer dans le sous-dossier de votre choix et modif
 
 ## Commandes utiles
 
-# Opérations basiques
+### Opérations basiques
 
 Insérer une image
 
-# Macros
+### Macros
 
 ```\ud```permet d'écrire propement une différentielle dnas une intégrale, par exemple ```\int f(x) \ud x```
 
