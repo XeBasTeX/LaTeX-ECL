@@ -19,16 +19,17 @@ Télécharger le dossier, le placer dans le sous-dossier de votre choix et modif
 
 ### Opérations basiques
 
-- Pour insérer une image : utiliser la commande fournie en exemple dans le rapport : 
+- Pour insérer une image : utiliser la commande fournie en exemple dans le rapport :
 ```latex
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.3\textwidth]{example-image-a}
     \caption{Insérer ici le sous-titre.}
     \label{fig:id-de-la-figure}
-\end{figure}```
+\end{figure}
+```
 
-- Insérer du code
+- Pour insérer du code : soit avec ```listing``` soit avec ```minted```
 
 - Pour taper des quantités physiques : utiliser la commande ```\SI{nombre}{unités}```, par exemple comme ``` e = \SI{10}{m.kg^2/s}```
 
