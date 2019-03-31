@@ -19,7 +19,12 @@ Télécharger le dossier, le placer dans le sous-dossier de votre choix et modif
 
 ### Opérations basiques
 
-- Insérer une image
+- Pour insérer une image : utiliser la commande fournie en exemple dans le rapport : ```\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.3\textwidth]{example-image-a}
+    \caption{Insérer ici le sous-titre.}
+    \label{fig:id-de-la-figure}
+\end{figure}```
 
 - Insérer du code
 
