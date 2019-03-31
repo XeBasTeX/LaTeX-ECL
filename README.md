@@ -39,7 +39,7 @@ Télécharger le dossier, le placer dans le sous-dossier de votre choix et modif
 
 ### Macros
 
-```\subt{texte en dessous}``` permet d'écrire proprement un indice de notation (donc pas une variable). Par exemple T_c signifie << température chaude >> et c n'est pas une variable mais bien l'abréviationde chaud. Il faut donc noter ```T\sub{c}```
+```\subt{texte en dessous}``` permet d'écrire proprement un indice de notation (donc pas une variable). Par exemple T_c signifie << température chaude >>, c n'est pas une variable mais bien l'abréviation de chaud. Il faut donc noter ```T\sub{c}```
 
 ```\supt{texte en dessous}``` permet d'écrire de la même façon un indice supérieur : filtre non-causal ```W\sub{nc}```
 
@@ -55,9 +55,10 @@ Vous pouvez m'envoyer vos suggestions à mon adresse centralienne, en me chercha
 
 ## Crédits
 
-Je tiens à remercier en particulier :
-- Hachtung, dont la première feuille de style a fourni une excellente base pour la suite ;
-- Govi dont le rapport de PAr a permis de tirer quelques *features* intéressantes ;
+Je tiens à remercier en particulier, par ordre chornologique de contributions dans le projet :
+- Nicolas Gameiro, dont la première feuille de style a fourni une excellente base pour la suite ;
+- Gauthier Fanucci dont le rapport de PAr a permis de tirer quelques *features* intéressantes ;
+- l'équipe de la PAO mandat 2019 - 2020 en particulier Yann Zerrouk, Olivia Jeanne et Blaise (chais-pas-ton-nom déso)
 - les bêta-testeurs du code, à savoir personne.
 
 ## À propos des auteurs
