@@ -8,13 +8,13 @@
 %------------------------------------------ CHARGEMENT DES EXTENSIONS ------------------------------------------%
 
 % -------------  Langue utilisée ------------- 
-\RequirePackage[utf8]{inputenc} % Reconnaissance des lettre du clavier
+\RequirePackage[utf8]{inputenc} % Reconnaissance des lettres du clavier
 \RequirePackage[T1]{fontenc}     
 \RequirePackage[frenchb]{babel} 
 
 % -------------  Mise en page ------------- 
 \RequirePackage[a4paper]{geometry}	% Mise en page acceptable
-\RequirePackage[final]{microtype} % Pour améliorer la qualité du texte avec la microtypo
+\RequirePackage[final]{microtype} % Pour améliorer la qualité de la lecture avec la microtypo
 \RequirePackage{hyperref}
  \hypersetup{pdftoolbar=false,        % show Acrobat’s toolbar?
     pdfmenubar=true,        % show Acrobat’s menu?
@@ -25,14 +25,14 @@
 \newcommand{\reff}[1]{\textbf{\textcolor{CentraleRed}{\textsc{\ref{#1}}}}}  % Pour réaliser des citations potables
 
 % -------------  Mise en page 2 ------------- 
-\RequirePackage{graphicx}	% pour importer des images
-\RequirePackage{booktabs}	% pour introduire des tableaux
+\RequirePackage{graphicx}	% Pour importer des images
+\RequirePackage{booktabs}	% Pour introduire des tableaux
 \RequirePackage[toc,page]{appendix}
-%\RequirePackage[Bjornstrup]{fncychap} % si on fait un report ou book
+%\RequirePackage[Bjornstrup]{fncychap} % Si on fait un report ou book
 \RequirePackage{lmodern} 
-\RequirePackage{fancyhdr}	% des titres fouqués
-\RequirePackage{lipsum}		% mettre du texte lipsum en maquette
-\RequirePackage{framed}		% des cadres pougnés
+\RequirePackage{fancyhdr}	% Des titres fouqués
+\RequirePackage{lipsum}		% Mettre du texte lipsum en maquette
+\RequirePackage{framed}		% Des cadres pougnés
 \RequirePackage{bm} % Du texte en gras bien mis
 
 % ------------- En-têtes ------------- 
@@ -45,14 +45,14 @@
 \lhead{\nouppercase{\rightmark}}
 
 % ------------- Images, figures et tables ------------- 
-\RequirePackage{epstopdf} 	% utiliser .eps
-\RequirePackage[pages=some]{background}	% pour mettre un fond, pages=some permet de choisir els pages concernées
+\RequirePackage{epstopdf} 	% Utiliser le format .eps
+\RequirePackage[pages=some]{background}	% Pour mettre un fond, pages=some permet de choisir els pages concernées
 \RequirePackage{epsfig}	% eps to pdf converter
-\RequirePackage{float}	% pour avoir des tableaux qui restent dans leurs sections
-\RequirePackage{graphicx}	% mporter image
-\RequirePackage{hyperref}	% importer hypertexte
-\RequirePackage{array}		% importer tableau
-\RequirePackage{colortbl}		% couleurs dans le tableau
+\RequirePackage{float}	% Pour avoir des tableaux qui restent dans leurs sections
+\RequirePackage{graphicx}	% Importer image
+\RequirePackage{hyperref}	% Importer hypertexte
+\RequirePackage{array}		% Importer tableau
+\RequirePackage{colortbl}		% Couleurs dans le tableau
 \RequirePackage{array} % Pour des tableaux bien formaté
 \RequirePackage{multirow} % Fusion des lignes dans les tableaux
 \RequirePackage[footnote]{acronym} % Des acronymes accessibles et définissables
@@ -68,12 +68,12 @@
 %\SetWatermarkScale{3}
 
 % ------------- Du dessin et des couleurs ------------- 
-\RequirePackage{xcolor}		% changer la couleur
+\RequirePackage{xcolor}		% Changer la couleur
 \RequirePackage[most]{tcolorbox}
-\RequirePackage{tikz}		% pour dessiner
-\RequirePackage{schemabloc}	% des schémas-blocs
-\RequirePackage[siunitx, american, smartlabels, cute inductors]{circuitikz}		% pour dessiner des circuits électroniques
-\usetikzlibrary{babel}		% pour éviter des conflits entre paquets tikz et babel
+\RequirePackage{tikz}		% Pour dessiner
+\RequirePackage{schemabloc}	% Des schémas-blocs
+\RequirePackage[siunitx, american, smartlabels, cute inductors]{circuitikz}		% Pour dessiner des circuits électroniques
+\usetikzlibrary{babel}		% Pour éviter des conflits entre paquets tikz et babel
 
 
 % ------------- Des maths ------------- 
@@ -82,7 +82,7 @@
 \RequirePackage{amsmath, amssymb, amsfonts, amsthm, mathtools} % mathtools for: Aboxed (put box on last equation in align envirenment)
 \RequirePackage{mathpazo} % La police utilisée dans tout le document
 \RequirePackage{siunitx}		% Des unités bien écrites pour la physique
-\sisetup{locale = FR}		% Pour avoir les bonnes conventions typo
+\sisetup{locale = FR}		% Pour avoir les bonnes conventions typo en français
 
 % ------------- Une biliographie ------------- 
 \bibliographystyle{plain-fr}
@@ -104,9 +104,9 @@
 
 %------------------------------------------SECTIONS, FIGURES ET TABLEAUX------------------------------------------%
 
-\chapterfont{\color{CentraleRed}} % sets colour of chapters
-\sectionfont{\color{CentraleRed}\sffamily}  % sets colour of sections
-\subsectionfont{\color{CentraleGrayEq}\sffamily\itshape}  % sets colour of sections
+\chapterfont{\color{CentraleRed}} % choisir la couleur des chapitres
+\sectionfont{\color{CentraleRed}\sffamily}  % choisir la couleur des sections
+\subsectionfont{\color{CentraleGrayEq}\sffamily\itshape}  % choisir la couleur des sous-sections
 \DeclareCaptionFont{CaptionCentrale}{\color{CentraleRed}}
 \captionsetup[table]{labelfont={CaptionCentrale,bf}}
 \captionsetup[figure]{labelfont={CaptionCentrale,bf}}
@@ -201,14 +201,14 @@
 \DeclareFontFamily{U}{wncy}{}
 \DeclareFontShape{U}{wncy}{m}{n}{<->wncyr10}{}
 \DeclareSymbolFont{mcy}{U}{wncy}{m}{n}
-\DeclareMathSymbol{\Sh}{\mathord}{mcy}{"58} 	%ces 4 lignes définissent la lettre sha pour le peigne de Dirac
+\DeclareMathSymbol{\Sh}{\mathord}{mcy}{"58} 	% Ces 4 lignes définissent la lettre sha pour le peigne de Dirac
 
 %------- Autres
 
 
 %------------------------------------------METTRE DU CODE INFORMATIQUE------------------------------------------%
 
-\usepackage{minted}
+\usepackage{minted} % Paquet actuellement en développement
 
 \lstset{language=python,%
     basicstyle=\footnotesize,
@@ -262,5 +262,5 @@
 
 
 
-%% Fin du package
+%% Fin du paquet
 \endinput
