@@ -8,9 +8,7 @@
 Correctifs à apporter :
 - terminer le setup du siunitx, clarifier l'usage ;
 - faire un environnement pour les parties particulières du rapport (e.g. la page résumé) ;
-- faire la mise en page (CHECK) ;
 - faire une documentation ;
-- refaire les header (CHECK) ;
 - mettre en ordre le code par section (EN COURS).
 
 ## Installation
