@@ -58,4 +58,4 @@ Bastien Laville dit le Makzer (président de la PAO mandat 2018 - 2019)
 
 ## Distribution et license
 
-![MIT](https://opensource.org/licenses/MIT) © Bastien Laville
+MIT © Bastien Laville
