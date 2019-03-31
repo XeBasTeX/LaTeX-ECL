@@ -43,7 +43,7 @@ Télécharger le dossier, le placer dans le sous-dossier de votre choix et modif
 
 ```\supt{texte en dessous}``` permet d'écrire de la même façon un indice supérieur : filtre non-causal ```W\sub{nc}```
 
-```\ud``` permet d'écrire proprement une différentielle dans une intégrale, par exemple ```\int f(x) \ud x```
+```\ud``` permet d'écrire proprement une différentielle, par exemple dans une intégrale : ```\int f(x) \ud x```
 
 ```\derd{f}{x}``` permet de taper une dérivée droite de la fonction ```f```par rapport à ```x```
 
