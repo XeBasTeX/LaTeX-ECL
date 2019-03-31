@@ -31,11 +31,19 @@ Télécharger le dossier, le placer dans le sous-dossier de votre choix et modif
 
 - Pour insérer du code : soit avec ```listing``` soit avec ```minted```
 
+- Pour faire référence à une figure : utiliser ```\reff{fig:id-de-la-figure}```
+
+- Pour faire référence à une référence bibliographique ```\citee{fig:id-de-la-ref}```
+
 - Pour taper des quantités physiques : utiliser la commande ```\SI{nombre}{unités}```, par exemple comme ``` e = \SI{10}{m.kg^2/s}```
 
 ### Macros
 
-```\ud``` permet d'écrire propement une différentielle dans une intégrale, par exemple ```\int f(x) \ud x```
+```\subt{texte en dessous}``` permet d'écrire proprement un indice de notation (donc pas une variable). Par exemple T_c signifie << température chaude >> et c n'est pas une variable mais bien l'abréviationde chaud. Il faut donc noter ```T\sub{c}```
+
+```\supt{texte en dessous}``` permet d'écrire de la même façon un indice supérieur : filtre non-causal ```W\sub{nc}```
+
+```\ud``` permet d'écrire proprement une différentielle dans une intégrale, par exemple ```\int f(x) \ud x```
 
 ```\derd{f}{x}``` permet de taper une dérivée droite de la fonction ```f```par rapport à ```x```
 
