@@ -19,7 +19,11 @@ Télécharger le dossier, le placer dans le sous-dossier de votre choix et modif
 
 ### Opérations basiques
 
-Insérer une image
+- Insérer une image
+
+- Insérer du code
+
+- Pour taper des quantités physiques : utiliser la commande ```\SI{nombre}{unités}```, par exemple comme ``` e = \SI{10}{m.kg^2/s}```
 
 ### Macros
 
