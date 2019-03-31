@@ -23,7 +23,7 @@ Télécharger le dossier, le placer dans le sous-dossier de votre choix et modif
 ```latex
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=0.3\textwidth]{example-image-a}
+    \includegraphics[width=1\textwidth]{example-image-a}
     \caption{Insérer ici le sous-titre.}
     \label{fig:id-de-la-figure}
 \end{figure}
