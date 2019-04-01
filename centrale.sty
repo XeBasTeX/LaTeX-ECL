@@ -15,7 +15,7 @@
 % -------------  Mise en page ------------- 
 \RequirePackage[a4paper]{geometry}	% Mise en page acceptable
 \RequirePackage[final]{microtype} % Pour améliorer la qualité de la lecture avec la microtypo
-\RequirePackage{hyperref}
+\RequirePackage{hyperref} % Importer hypertexte
  \hypersetup{pdftoolbar=false,        % show Acrobat’s toolbar?
     pdfmenubar=true,        % show Acrobat’s menu?
     pdffitwindow=false,     % window fit to page when opened
@@ -34,6 +34,8 @@
 \RequirePackage{lipsum}		% Mettre du texte lipsum en maquette
 \RequirePackage{framed}		% Des cadres pougnés
 \RequirePackage{bm} % Du texte en gras bien mis
+\RequirePackage{nomencl} % Faire une nomenclature
+\RequirePackage[footnote]{acronym} % Des acronymes accessibles et définissables
 
 % ------------- En-têtes ------------- 
 \renewcommand{\baselinestretch}{1.05}
@@ -50,12 +52,10 @@
 \RequirePackage{epsfig}	% eps to pdf converter
 \RequirePackage{float}	% Pour avoir des tableaux qui restent dans leurs sections
 \RequirePackage{graphicx}	% Importer image
-\RequirePackage{hyperref}	% Importer hypertexte
 \RequirePackage{array}		% Importer tableau
 \RequirePackage{colortbl}		% Couleurs dans le tableau
 \RequirePackage{array} % Pour des tableaux bien formaté
 \RequirePackage{multirow} % Fusion des lignes dans les tableaux
-\RequirePackage[footnote]{acronym} % Des acronymes accessibles et définissables
 
 % ------------- Des sections et des sous-titres ------------- 
 \RequirePackage{titlesec}
@@ -76,7 +76,7 @@
 \usetikzlibrary{babel}		% Pour éviter des conflits entre paquets tikz et babel
 
 
-% ------------- Des maths ------------- 
+% ------------- Des maths et de l'info ------------- 
 \RequirePackage{listings}		% Importer du code informatique et le travailler
 %\RequirePackage{fouriernc}
 \RequirePackage{amsmath, amssymb, amsfonts, amsthm, mathtools} % mathtools for: Aboxed (put box on last equation in align envirenment)
@@ -87,6 +87,8 @@
 % ------------- Une biliographie ------------- 
 \bibliographystyle{plain-fr}
 
+
+% ------------- Les options du paquet ------------- 
 \DeclareOption{option}{...}
 \DeclareOption*{...}
 \ProcessOptions
@@ -173,7 +175,7 @@
 
 %------- Notation des ensembles
 
-\newcommand{\A} {\ensuremath{\mathcal{A}}}
+\newcommand{\A}{\ensuremath{\mathcal{A}}}
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\N}{\mathbb{N}}
