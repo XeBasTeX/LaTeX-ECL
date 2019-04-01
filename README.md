@@ -43,7 +43,7 @@ Télécharger le dossier, le placer dans le sous-dossier de votre choix et modif
 
 ```\subt{texte en dessous}``` permet d'écrire proprement un indice de notation (donc pas une variable). Par exemple T_c signifie << température chaude >>, c n'est pas une variable mais bien l'abréviation de chaud. Il faut donc noter ```T\sub{c}```
 
-```\supt{texte en dessous}``` permet d'écrire de la même façon un indice supérieur : filtre non-causal ```W\sub{nc}```
+```\supt{texte au dessus}``` permet d'écrire de la même façon un indice supérieur : filtre non-causal ```W\sub{nc}```
 
 ```\ud``` permet d'écrire proprement une différentielle, par exemple dans une intégrale : ```\int f(x) \ud x```
 
