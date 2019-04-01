@@ -58,9 +58,9 @@ Vous pouvez m'envoyer vos suggestions à mon adresse centralienne, en me chercha
 ## Crédits
 
 Je tiens à remercier en particulier, par ordre chornologique de contributions dans le projet :
-- Nicolas Gameiro, dont la première feuille de style a fourni une excellente base pour la suite ;
+- Nicolas Gameiro dont la première feuille de style a fourni une excellente base pour la suite ;
 - Gauthier Fanucci dont le rapport de PAr a permis de tirer quelques *features* intéressantes ;
-- l'équipe de la PAO mandat 2019 - 2020 en particulier Yann Zerrouk, Olivia Jeanne et Blaise (chais-pas-ton-nom déso)
+- l'équipe de la PAO mandat 2019 - 2020 et plus spécialement Yann Zerrouk, Olivia Jeanne et Blaise (chais-pas-ton-nom déso)
 - les bêta-testeurs du code, à savoir personne.
 
 ## À propos des auteurs
