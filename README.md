@@ -35,7 +35,9 @@ Télécharger le dossier, le placer dans le sous-dossier de votre choix et modif
 
 - Pour faire référence à une référence bibliographique ```\citee{fig:id-de-la-ref}```
 
-- Pour taper des quantités physiques : utiliser la commande ```\SI{nombre}{unités}```, par exemple comme ``` e = \SI{10}{m.kg^2/s}```
+- Pour taper bêtement un nombre : vous pouvez le faire normalement ou utiliser la commande ```\num{nombre}``` comme ```\num{2e-6}```
+
+- Pour taper des quantités physiques : utiliser la commande ```\SI{nombre}{unités}```, par exemple comme ``` e = \SI{1e-2}{m.kg^2/s}```
 
 ### Macros
 
