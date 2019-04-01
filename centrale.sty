@@ -121,6 +121,8 @@
 
 \newcommand{\ch}[1] {\mathrm{#1}}
 \newcommand{\ud}{\ensuremath{\, \mathrm{d}}}
+\newcommand{\eqdef}{\stackrel{\mathrm{def}}{=}}
+
 \newcommand{\subt}[1] {\ensuremath{_{\text{#1}}}}
 \newcommand{\supt}[1] {\ensuremath{^{\text{#1}}}}
 \newcommand{\citea}[1] {$^{\text{\cite{#1}}}$}
@@ -189,21 +191,22 @@
 \newcommand{\cont}{\mathcal{C}}
 
 
-%------- Fonctions du traitement du signal
+%------- Fonctions de traitement du signal
 
-\newcommand{\eqdef}{\stackrel{\mathrm{def}}{=}}
+\DeclareMathOperator{\sinc}{sinc}
+\DeclareMathOperator{\sgn}{\text{sgn}}
 \newcommand{\argmax}{\operatornamewithlimits{argmax}}
 \newcommand{\argmin}{\operatornamewithlimits{argmin}}
 \newcommand{\vect}{\text{Vect}}
-\newcommand{\sinc}{\ensuremath{\mathrm{sinc}}}
 \newcommand{\esp}{\ensuremath{\mathbb{E}}}
 \newcommand{\hilbert}{\ensuremath{\mathcal{H}}}
 \newcommand{\fourier}{\ensuremath{\mathcal{F}}}
-\newcommand{\sgn}{\text{sgn}}
+
+	% Ces 4 lignes définissent la lettre sha pour le peigne de Dirac
 \DeclareFontFamily{U}{wncy}{}
 \DeclareFontShape{U}{wncy}{m}{n}{<->wncyr10}{}
 \DeclareSymbolFont{mcy}{U}{wncy}{m}{n}
-\DeclareMathSymbol{\Sh}{\mathord}{mcy}{"58} 	% Ces 4 lignes définissent la lettre sha pour le peigne de Dirac
+\DeclareMathSymbol{\Sh}{\mathord}{mcy}{"58} 
 
 %------- Autres
 
