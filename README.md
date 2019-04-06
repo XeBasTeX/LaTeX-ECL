@@ -47,9 +47,9 @@ Télécharger le dossier, le placer dans le sous-dossier de votre choix et modif
 
 ```\ud``` permet d'écrire proprement une différentielle, par exemple dans une intégrale : ```\int f(x) \ud x```
 
-```\derd{f}{x}``` permet de taper une dérivée droite de la fonction ```f```par rapport à ```x```
+```\derd{f}{x}``` permet de taper une dérivée droite de la fonction ```f``` par rapport à ```x```
 
-```\derp{f}{x}``` permet de taper une dérivée partielle de la fonction ```f```par rapport à ```x```
+```\derp{f}{x}``` permet de taper une dérivée partielle de la fonction ```f``` par rapport à ```x```
 
 ## Comment contribuer ?
 
