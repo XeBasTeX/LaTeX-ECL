@@ -65,7 +65,7 @@ Je tiens à remercier en particulier, par ordre chornologique de contributions d
 
 ## À propos des auteurs
 
-Bastien Laville dit le Makzer (président de la PAO mandat 2018 - 2019)
+Bastien Laville dit le Makzer (président de la PAO mandat 2018 - 2019) en 2A à l'ECL
 
 ## Distribution et license
 
