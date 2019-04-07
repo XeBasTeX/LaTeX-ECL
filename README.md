@@ -13,7 +13,16 @@ Correctifs à apporter :
 
 ## Installation
 
+### Pour utiliser le rapport et le paquet
+
 Télécharger le dossier, le placer dans le sous-dossier de votre choix et modifier uniquement le fichier ```rapport.tex```. Vous pouvez retirer le fichier ```README.md``` et le fichier de license.
+
+### Pour utiliser seulement le paquet
+
+Copier le fichier ```centrale.sty``` dans le répertoire de votre propre rapport et utiliser dans le code de votre propre rapport la commande suivante :
+```latex
+\usepackage{centrale}
+```
 
 ## Commandes utiles
 
@@ -69,4 +78,4 @@ Bastien Laville dit le Makzer (président de la PAO mandat 2018 - 2019) en 2A à
 
 ## Distribution et license
 
-MIT © Bastien Laville
+Licence MIT © Bastien Laville
