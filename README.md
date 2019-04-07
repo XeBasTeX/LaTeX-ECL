@@ -56,13 +56,14 @@ Copier le fichier ```centrale.sty``` dans le répertoire de votre propre rapport
 
 ```\ud``` permet d'écrire proprement une différentielle, par exemple dans une intégrale : ```\int f(x) \ud x```
 
-```\derd{f}{x}``` permet de taper une dérivée droite de la fonction ```f``` par rapport à ```x```
+```\derd{f}{x}``` permet de taper la dérivée droite de la fonction ```f``` par rapport à ```x```
 
-```\derp{f}{x}``` permet de taper une dérivée partielle de la fonction ```f``` par rapport à ```x```
+```\derp{f}{x}``` permet de taper la dérivée partielle de la fonction ```f``` par rapport à ```x```
 
 ## Comment contribuer ?
 
-Vous pouvez m'envoyer vos suggestions à mon adresse centralienne, en me cherchant depuis l'annuaire de Zimbra.
+- Contactez-moi pour devenir un contributeur du projet, notamment sur la branche *dev* ;
+- Vous pouvez m'envoyer vos suggestions à mon adresse centralienne, en me cherchant depuis l'annuaire de Zimbra.
 
 ## Crédits
 
