@@ -6,11 +6,11 @@
 ![](https://img.shields.io/github/license/XeBasTeX/LaTeX-ECL.svg)
 ![](https://img.shields.io/github/languages/code-size/XeBasTeX/LaTeX-ECL.svg)
 
-Correctifs à apporter :
-- terminer le setup du siunitx, clarifier l'usage ;
-- faire un environnement pour les parties particulières du rapport (e.g. la page résumé) ;
-- faire une documentation ;
-- mettre en ordre le code par section (EN COURS).
+<div align="center">
+  <img src="https://www.ec-lyon.fr/sites/default/files/legacy-files/logo_quadri.jpg">
+</div>
+
+-----------------
 
 ## Installation
 
