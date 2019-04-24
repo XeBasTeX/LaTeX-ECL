@@ -16,7 +16,7 @@
 
 ### Pour utiliser le rapport et le paquet
 
-Télécharger le dossier, le placer dans le sous-dossier de votre choix et modifier uniquement le fichier ```rapport.tex```. Vous pouvez retirer le fichier ```README.md``` et le fichier de license.
+Télécharger le dossier, le placer dans le sous-dossier de votre choix et modifier uniquement le fichier ```rapport.tex```. Vous pouvez retirer le fichier ```README.md``` et le fichier de licence.
 
 ### Pour utiliser seulement le paquet
 
