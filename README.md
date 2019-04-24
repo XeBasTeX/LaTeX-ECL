@@ -29,7 +29,7 @@ Copier le fichier ```centrale.sty``` dans le répertoire de votre propre rapport
 
 ### Opérations basiques
 
-- Pour insérer une image : utiliser la commande fournie en exemple dans le rapport :
+- Pour insérer une image : utiliser la commande fournie en exemple dans le rapport, modifiez la taille de l'image avec *width = ...* par exemple *width=1\textwidth*
 ```latex
 \begin{figure}[ht!]
     \centering
@@ -45,9 +45,9 @@ Copier le fichier ```centrale.sty``` dans le répertoire de votre propre rapport
 
 - Pour faire référence à une référence bibliographique ```\citee{fig:id-de-la-ref}```
 
-- Pour taper bêtement un nombre : vous pouvez le faire normalement ou utiliser la commande ```\num{nombre}``` comme ```\num{2e-6}```
+- Pour taper bêtement un nombre : vous pouvez le faire normalement comme 123, ou utiliser la commande ```\num{nombre}``` comme ```\num{2e-6}```
 
-- Pour taper des quantités physiques : utiliser la commande ```\SI{nombre}{unités}```, par exemple comme ``` e = \SI{1e-2}{m.kg^2/s}```
+- Pour taper des quantités physiques : utiliser la commande ```\SI{nombre}{unités}```, par exemple comme ```e = \SI{1e-2}{m.kg^2/s}```
 
 ### Macros
 
@@ -76,8 +76,8 @@ Je tiens à remercier en particulier, par ordre chornologique de contributions d
 
 ## À propos des auteurs
 
-Bastien Laville dit le Makzer (président de la PAO mandat 2018 - 2019) en 2A à l'ECL
+Bastien Laville dit le Makzer (président de la PAO mandat 2018 - 2019) en 2A à l'ECL.
 
 ## Distribution et license
 
-Licence MIT © Bastien Laville
+Licence MIT © Bastien Laville -- PAO
