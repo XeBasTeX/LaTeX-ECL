@@ -93,7 +93,25 @@
 
 \lipsum[1]
 
+Pour faire des dérivations :
 
+\[
+    \derp{x}{t} + \derd{y}{t} + \derd2{z}{t} = 0
+\]
+
+Pour faire des intégrales, le d de la différentielle est tapé avec \texttt{\ud} :
+
+\[
+    \int_0^t x \ud t = 0
+\]
+
+Pour utiliser des opérateurs :
+
+\[
+    \div{x} + \rot{y} + \grad{z} = 0
+\]
+
+Pour introduire une figure : 
 
 \begin{figure}[ht!]
     \centering
@@ -102,6 +120,7 @@
     \label{fig:id-de-la-figure}
 \end{figure}
 
+Pour introduire une table : 
 
 \begin{table}[!ht]
 \begin{center}
@@ -115,7 +134,7 @@ Un autre &  &  &  &  &  &  & \\ \bottomrule
 \end{table}
 
 
-
+% Pour introduire du code informatique (décommenter)
 %\begin{listing}[ht]
 %\inputminted[linenos=true, breaklines,frame=lines,framesep=2mm]{python}{code/}
 %\caption{Du code informatique}
