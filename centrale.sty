@@ -3,7 +3,7 @@
 % vim: set fenc=utf-8
 %% Informations générales
 \NeedsTeXFormat{LaTeX2e}[1999/01/01]
-\ProvidesPackage{centrale}[2019/03/19 v0.31 centrale: standard scientific documents layout for Centrale Lyon - Copyright (C) Bastien Laville, 2019]
+\ProvidesPackage{centrale}[2019/04/23 v1.0 centrale: standard scientific documents layout for Centrale Lyon - Copyright (C) Bastien Laville, 2019]
 
 %------------------------------------------ CHARGEMENT DES EXTENSIONS ------------------------------------------%
 
@@ -54,8 +54,8 @@
 \RequirePackage{graphicx}	% Importer image
 \RequirePackage{array}		% Importer tableau
 \RequirePackage{colortbl}		% Couleurs dans le tableau
-\RequirePackage{array} % Pour des tableaux bien formaté
-\RequirePackage{multirow} % Fusion des lignes dans les tableaux
+\RequirePackage{array} 		% Pour des tableaux bien formatés
+\RequirePackage{multirow}	 % Fusion des lignes dans les tableaux
 
 % ------------- Des sections et des sous-titres ------------- 
 \RequirePackage{titlesec}
@@ -182,10 +182,10 @@
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\K}{\mathbb{K}}
-\newcommand{\Lens}{\mathcal{L}}
+\newcommand{\Lens}{\mathcal{L}} % Lens pour "l'ENSemble L" 
+\newcommand{\Pens}{\mathcal{P}} % Pareil
 \newcommand{\M}{\mathcal{M}}
 \newcommand{\B}{\mathcal{B}}
-\newcommand{\Pens}{\mathcal{P}}
 \newcommand{\dom}{\mathcal{D}}
 \newcommand{\surf}{\mathcal{S}}
 \newcommand{\cont}{\mathcal{C}}
@@ -202,7 +202,7 @@
 \newcommand{\hilbert}{\ensuremath{\mathcal{H}}}
 \newcommand{\fourier}{\ensuremath{\mathcal{F}}}
 
-	% Ces 4 lignes définissent la lettre sha pour le peigne de Dirac
+% Ces 4 lignes définissent la lettre sha pour le peigne de Dirac (et pas le vieux "Pgn" comme "pougne")
 \DeclareFontFamily{U}{wncy}{}
 \DeclareFontShape{U}{wncy}{m}{n}{<->wncyr10}{}
 \DeclareSymbolFont{mcy}{U}{wncy}{m}{n}
@@ -213,7 +213,7 @@
 
 %------------------------------------------METTRE DU CODE INFORMATIQUE------------------------------------------%
 
-%\usepackage{minted} % Paquet actuellement en développement
+%\usepackage{minted} % Intégration du paquet actuellement en développement
 
 \lstset{language=python,%
     basicstyle=\footnotesize,
