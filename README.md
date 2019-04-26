@@ -29,7 +29,7 @@ Copier le fichier ```centrale.sty``` dans le répertoire de votre propre rapport
 
 ### Opérations basiques
 
-- Pour insérer une image : utiliser la commande fournie en exemple dans le rapport, modifiez la taille de l'image avec *width = ...* par exemple *width=1\textwidth*
+- Pour insérer une image : utiliser la commande fournie en exemple dans le rapport, modifier la taille de l'image avec *width = ...* par exemple *width=1\textwidth*
 ```latex
 \begin{figure}[ht!]
     \centering
