@@ -74,7 +74,7 @@ Je tiens à remercier en particulier, par ordre chornologique de contributions d
 - l'équipe de la PAO mandat 2019 - 2020 et plus spécialement Yann Zerrouk, Olivia Jeanne et Blaise (chais-pas-ton-nom déso) pour ses chtites contributions
 - les bêta-testeurs du code, à savoir personne.
 
-## À propos des auteurs
+## À propos de l'auteur
 
 Bastien Laville dit le Makzer (président de la PAO mandat 2018 - 2019, Webmestre de la Commuz' 2020, club cocktail et club cuisine) en 2A à l'ECL.
 
