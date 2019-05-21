@@ -61,6 +61,10 @@ Copier le fichier ```centrale.sty``` dans le répertoire de votre propre rapport
 
 ```\derp{f}{x}``` permet de taper la dérivée partielle de la fonction ```f``` par rapport à ```x```
 
+## Ressources utiles (et pour aller plus loin)
+
+- 10 règles fondamentales en LaTeX : faculty.math.illinois.edu/~hildebr/tex/tips-topten.html
+
 ## Comment contribuer ?
 
 - Contactez-moi pour devenir un contributeur du projet, notamment sur la branche *dev* ;
