@@ -6,15 +6,15 @@
 \usepackage{centrale}
 
 \hypersetup{
-    pdftitle={Titre à insérer},
-    pdfauthor={Auteur à insérer},
-    pdfsubject={Sujet à insérer},
-    pdfproducer={Conversion PDF à insérer},
-    pdfkeywords={Quelques mots-clés à insérer} %
+  pdftitle={Titre},
+  pdfauthor={Auteur},
+  pdfsubject={Sujet},
+  pdfproducer={Conversion PDF},
+  pdfkeywords={Quelques mots-clés} %
 }
 
-\DeclareGraphicsRule{.ai}{pdf}{.ai}{} % pour insérer des documents .ai
-\graphicspath{ {./img/} {./eps/}} % pour ne pas avoir à ajouter eps/ton-image.jpg
+\DeclareGraphicsRule{.ai}{pdf}{.ai}{} % Pour insérer des documents .ai
+\graphicspath{ {./img/} {./eps/}} % Pour ne pas avoir à ajouter eps/ton-image.jpg
 
 % ------------- Packages spéciaux, nécessaires pour ce rapport, à insérer ici ------------- 
 
@@ -26,44 +26,44 @@
 % --------------------------------------------------------------
 
 \begin{titlepage}
-\begin{center}
+  \begin{center}
 
-\includegraphics[width=1\textwidth]{logo_ECL_rectangle_quadri_vectoriel.ai}\\[1cm]
+    \includegraphics[width=1\textwidth]{logo_ECL_rectangle_quadri_vectoriel.ai}\\[1cm]
 
-{\large Intitulé de la filière, domaine ou approfondissement}\\[0.5cm]
+    {\large Intitulé de la filière, domaine ou approfondissement}\\[0.5cm]
 
-{\large Type de projet}\\[0.5cm]
+    {\large Type de projet}\\[0.5cm]
 
-% Title
-\rule{\linewidth}{0.5mm} \\[0.4cm]
-{ \huge \bfseries Titre du rapport éventuellement en plusieurs lignes \\[0.4cm] }
-\rule{\linewidth}{0.5mm} \\[1.5cm]
+    % Titre
+    \rule{\linewidth}{0.5mm} \\[0.4cm]
+    { \huge \bfseries Titre du rapport éventuellement en plusieurs lignes \\[0.4cm] }
+    \rule{\linewidth}{0.5mm} \\[1.5cm]
 
-% Author and supervisor
-\noindent
-\begin{minipage}{0.4\textwidth}
-  \begin{flushleft} \large
-    \emph{Auteurs :}\\
-    M\up{me} Prénom \textsc{Nom}\\
-    M. Prénom \textsc{Nom}\\
-    M. Prénom \textsc{Nom}\\
-    M. Prénom \textsc{Nom}
-  \end{flushleft}
-\end{minipage}%
-\begin{minipage}{0.4\textwidth}
-  \begin{flushright} \large
-    \emph{Encadrants :} \\
-    M.~Prénom \textsc{Nom}\\
-    M.~Prénom \textsc{Nom}
-  \end{flushright}
-\end{minipage}
+    % Auteur(es) et encadrant(es)
+    \noindent
+    \begin{minipage}{0.4\textwidth}
+      \begin{flushleft} \large
+        \emph{Auteurs :}\\
+        M\up{me} Prénom \textsc{Nom}\\
+        M. Prénom \textsc{Nom}\\
+        M. Prénom \textsc{Nom}\\
+        M. Prénom \textsc{Nom}
+      \end{flushleft}
+    \end{minipage}%
+    \begin{minipage}{0.4\textwidth}
+      \begin{flushright} \large
+        \emph{Encadrants :} \\
+        M.~Prénom \textsc{Nom}\\
+        M.~Prénom \textsc{Nom}
+      \end{flushright}
+    \end{minipage}
 
-\vfill
+    \vfill
 
-% Bottom of the page
-{\large Version du\\ \today}
+    % Bottom of the page
+    {\large Version du\\ \today}
 
-\end{center}
+  \end{center}
 \end{titlepage}
 
 % --------------------------------------------------------------
@@ -82,6 +82,8 @@
 
 
 
+
+
 % --------------------------------------------------------------
 %                         Partie 1
 % --------------------------------------------------------------
@@ -90,23 +92,30 @@
 \section{Une partie}
 \subsection{Une sous-partie}
 
+
 Pour faire des dérivations :
 
 \[
     \derp{x}{t} + \derd{y}{t} + \derda{z}{t} + \derD{z}{t} = 0
 \]
 
-Pour faire des intégrales, le d de la différentielle est tapé avec la commande \texttt{ud} :
+
+
+Pour faire des intégrales, le d de la différentielle est écrit avec la commande \texttt{ud} :
 
 \[
     \int_0^t x \ud t = 0
 \]
 
-Pour utiliser des opérateurs :
+
+
+Pour utiliser des opérateurs différentiels:
 
 \[
     \div{x} + \rot{y} + \grad{z} = 0
 \]
+
+
 
 
 Pour introduire une figure : 
@@ -117,6 +126,8 @@ Pour introduire une figure :
     \caption{Insérer ici le sous-titre.}
     \label{fig:id-de-la-figure}
 \end{figure}
+
+
 
 
 Pour introduire une table : 
@@ -131,6 +142,8 @@ Un autre &  &  &  &  &  &  & \\ \bottomrule
 \caption{Un tableau \label{tab:id-de-la-table}}
 \end{center}
 \end{table}
+
+
 
 Et également :
 
@@ -157,8 +170,6 @@ Et également :
 % --------------------------------------------------------------
 
 \section{Conclusion}
-
-
 \lipsum[1]
 
 
