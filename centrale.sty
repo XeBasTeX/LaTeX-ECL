@@ -1,7 +1,7 @@
 % !TEX encoding = UTF-8 Unicode
 % -*- coding: UTF-8; -*-
 % vim: set fenc=utf-8
-%% Informations générales
+%----- Informations générales
 \NeedsTeXFormat{LaTeX2e}[1999/01/01]
 \ProvidesPackage{centrale}[2019/04/23 v1.0 centrale: standard scientific documents layout for Centrale Lyon - Copyright (C) Bastien Laville, 2019]
 
@@ -14,8 +14,8 @@
 
 % -------------  Mise en page ------------- 
 \RequirePackage[a4paper]{geometry}	% Mise en page acceptable
-\RequirePackage[final]{microtype} % Pour améliorer la qualité de la lecture avec la microtypo
-\RequirePackage[pdfencoding=auto,psdextra]{hyperref} % Importer hypertexte
+\RequirePackage[final]{microtype} % Pour améliorer la qualité de la lecture avec la microtypotypographie (protrusion et kerning)
+\RequirePackage[pdfencoding=auto,psdextra]{hyperref} % Importer hypertexte avec possibilités de mettre des caractères utf8 dans les métadonnées
  \hypersetup{pdftoolbar=true,        % show Acrobat’s toolbar?
     pdfmenubar=true,        % show Acrobat’s menu?
     pdffitwindow=false,     % window fit to page when opened
@@ -27,18 +27,19 @@
 % -------------  Mise en page 2 ------------- 
 \RequirePackage{graphicx}	% Pour importer des images
 \RequirePackage{booktabs}	% Pour introduire des tableaux
-\RequirePackage[toc,page]{appendix}
+\RequirePackage[toc,page]{appendix}	% Pour créer des appendices
 %\RequirePackage[Bjornstrup]{fncychap} % Si on fait un report ou book
 \RequirePackage{lmodern} 
 \RequirePackage{fancyhdr}	% Des titres fouqués
-\RequirePackage{lipsum}		% Mettre du texte lipsum en maquette
+\RequirePackage{lipsum}		% Mettre du texte lipsum, pour faire une maquette de rapport
 \RequirePackage{framed}		% Des cadres pougnés
-\RequirePackage{bm} % Du texte en gras bien mis
+\RequirePackage{bm} % Du texte en gras bien fait
 \RequirePackage{nomencl} % Faire une nomenclature
 \RequirePackage[footnote]{acronym} % Des acronymes accessibles et définissables
 
 % ------------- En-têtes ------------- 
-\renewcommand{\baselinestretch}{1.05}
+% On définit ici des en-têtes de page avec titre de la section courante et numéro de page
+\renewcommand{\baselinestretch}{1.05}	
 \setlength{\headheight}{27.06pt}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -48,20 +49,20 @@
 
 % ------------- Images, figures et tables ------------- 
 \RequirePackage{epstopdf} 	% Utiliser le format .eps
-\RequirePackage[pages=some]{background}	% Pour mettre un fond, pages=some permet de choisir els pages concernées
-\RequirePackage{epsfig}	% eps to pdf converter
+\RequirePackage[pages=some]{background}	% Pour mettre un fond, pages=some permet de choisir les pages concernées
+\RequirePackage{epsfig}	% Convertisseur eps à pdf
 \RequirePackage{float}	% Pour avoir des tableaux qui restent dans leurs sections
 \RequirePackage{graphicx}	% Importer image
 \RequirePackage{array}		% Importer tableau
-\RequirePackage{colortbl}		% Couleurs dans le tableau
+\RequirePackage{colortbl}		% Couleurs dans un tableau
 \RequirePackage{array} 		% Pour des tableaux bien formatés
 \RequirePackage{multirow}	 % Fusion des lignes dans les tableaux
 
 % ------------- Des sections et des sous-titres ------------- 
-\RequirePackage{titlesec}
-\RequirePackage{sectsty}
-\RequirePackage{caption}
-\RequirePackage{subcaption}
+\RequirePackage{titlesec}	% Macros pour changer le style des titres de section
+\RequirePackage{sectsty}	% Changer le style des sections
+\RequirePackage{caption}	% Macros pour changer le style des titres de figure
+\RequirePackage{subcaption}	% Macros pour changer le style des sous-titres de figure
 
 %% Draft %%
 %\RequirePackage{draftwatermark}
@@ -71,21 +72,20 @@
 \RequirePackage{xcolor}		% Changer la couleur
 \RequirePackage[most]{tcolorbox}
 \RequirePackage{tikz}		% Pour dessiner
-\RequirePackage{schemabloc}	% Des schémas-blocs
+\RequirePackage{schemabloc}	% Dessiner des schémas-blocs avec tikz
 \RequirePackage[siunitx, american, smartlabels, cute inductors]{circuitikz}		% Pour dessiner des circuits électroniques
-\usetikzlibrary{babel}		% Pour éviter des conflits entre paquets tikz et babel
+\usetikzlibrary{babel}		% Pour éviter des conflits entre les paquets tikz et babel
 
 
 % ------------- Des maths et de l'info ------------- 
 \RequirePackage{listings}		% Importer du code informatique et le travailler
-%\RequirePackage{fouriernc}
 \RequirePackage{amsmath, amssymb, amsfonts, amsthm, mathtools} % mathtools for: Aboxed (put box on last equation in align envirenment)
-\RequirePackage{mathpazo} % La police utilisée dans tout le document
-\RequirePackage{siunitx}		% Des unités bien écrites pour la physique
-\sisetup{locale = FR}		% Pour avoir les bonnes conventions typo en français
+\RequirePackage{mathpazo} % La police d'écriture utilisée dans tout le document
+\RequirePackage{siunitx}		% Des unités bien écrites, par exemple pour les valeurs numériques
+\sisetup{locale = FR}		% Pour avoir les bonnes conventions typographiques des unités
 
 % ------------- Une biliographie ------------- 
-\bibliographystyle{plain-fr}
+\bibliographystyle{plain-fr}	% Biblio en français
 
 
 % ------------- Les options du paquet ------------- 
@@ -100,15 +100,15 @@
 \definecolor{CentraleGray}{rgb}{0.67,0.67, 0.67}
 \definecolor{CentraleBlue}{RGB}{0,67,89}
 \definecolor{CentraleGrayEq}{RGB}{66,66,66}
-\definecolor{matlabGreen}{RGB}{28,172,0} % pour le listing des codes
+\definecolor{matlabGreen}{RGB}{28,172,0} % Pour le listing des codes
 \definecolor{matlabLilas}{RGB}{170,55,241}
 
 
 %------------------------------------------SECTIONS, FIGURES ET TABLEAUX------------------------------------------%
 
-\chapterfont{\color{CentraleRed}} % choisir la couleur des chapitres
-\sectionfont{\color{CentraleRed}\sffamily}  % choisir la couleur des sections
-\subsectionfont{\color{CentraleGrayEq}\sffamily\itshape}  % choisir la couleur des sous-sections
+\chapterfont{\color{CentraleRed}} % Choisir la couleur des chapitres
+\sectionfont{\color{CentraleRed}\sffamily}  % Choisir la couleur des sections
+\subsectionfont{\color{CentraleGrayEq}\sffamily\itshape}  % Choisir la couleur des sous-sections
 \DeclareCaptionFont{CaptionCentrale}{\color{CentraleRed}}
 \captionsetup[table]{labelfont={CaptionCentrale,bf}}
 \captionsetup[figure]{labelfont={CaptionCentrale,bf}}
@@ -267,5 +267,5 @@
 
 
 
-%% Fin du paquet
+%----- Fin du paquet
 \endinput
