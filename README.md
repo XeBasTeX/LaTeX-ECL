@@ -20,7 +20,7 @@ Télécharger le dossier, le placer dans le sous-dossier de votre choix et modif
 
 ### Pour utiliser seulement le paquet
 
-Copier le fichier ```centrale.sty``` dans le répertoire de votre propre rapport et utiliser dans le code de votre propre rapport la commande suivante :
+Copier le fichier ```centrale.sty``` dans le répertoire de votre propre rapport et utiliser dans le code de votre propre rapport avec la commande suivante, à insérer dans le préambule :
 ```latex
 \usepackage{centrale}
 ```
