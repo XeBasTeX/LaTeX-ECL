@@ -29,7 +29,7 @@ Copier le fichier ```centrale.sty``` dans le répertoire de votre propre rapport
 
 ### Opérations basiques
 
-- Pour insérer une image : utiliser la commande fournie en exemple dans le rapport, modifier la taille de l'image avec *width = ...* par exemple *width=1\textwidth*
+- Pour insérer une image : utiliser la commande fournie en exemple dans le rapport, modifier la taille de l'image avec *width = ...* soit par exemple *width=1\textwidth*
 ```latex
 \begin{figure}[ht!]
     \centering
@@ -64,12 +64,12 @@ Copier le fichier ```centrale.sty``` dans le répertoire de votre propre rapport
 ## Ressources utiles (et pour aller plus loin)
 
 - un peu de typographie française ;
-- 10 règles fondamentales en LaTeX : faculty.math.illinois.edu/~hildebr/tex/tips-topten.html
+- 10 règles fondamentales en LaTeX disponible [ici](faculty.math.illinois.edu/~hildebr/tex/tips-topten.html)
 
 ## Comment contribuer ?
 
-- Contactez-moi pour devenir un contributeur du projet, notamment sur la branche *dev* ;
-- Vous pouvez m'envoyer vos suggestions à mon adresse centralienne, en me cherchant depuis l'annuaire de Zimbra.
+- Contactez-moi pour devenir un collaborateur du projet, notamment sur la branche *dev* ;
+- Vous pouvez m'envoyer vos suggestions ou modifications à mon adresse centralienne, en me cherchant depuis l'annuaire de [Zimbra](https://messagerie.ec-lyon.fr/zimbra).
 
 ## Crédits
 
