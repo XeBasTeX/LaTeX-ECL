@@ -89,8 +89,8 @@
 
 
 % ------------- Les options du paquet ------------- 
-\DeclareOption{option}{...}
-\DeclareOption*{...}
+\DeclareOption{...}{...}
+\DeclareOption*{\PackageWarning{examplepackage}{Unknown ‘\CurrentOption’}}  % Créer un warning pour signaler que l'option n'existe pas
 \ProcessOptions
 
 
@@ -212,8 +212,6 @@
 
 
 %------------------------------------------METTRE DU CODE INFORMATIQUE------------------------------------------%
-
-%\usepackage{minted} % Intégration du paquet actuellement en développement
 
 \lstset{language=python,%
     basicstyle=\footnotesize,

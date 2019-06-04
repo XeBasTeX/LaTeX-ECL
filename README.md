@@ -7,7 +7,7 @@
 ![Langage du projet](https://img.shields.io/github/languages/code-size/XeBasTeX/LaTeX-ECL.svg)
 
 <div align="center">
-  <img title="Logo du paquet centrale.sty" alt= "Logo du paquet centrale.sty" src="eps/centrale_sty_logo.png">
+  <img title="Logo du paquet centrale.sty" alt= "Logo du paquet LaTeX centrale.sty" src="eps/centrale_sty_logo.png">
 </div>
 
 -----------------
@@ -27,7 +27,7 @@ Copier le fichier ```centrale.sty``` dans le répertoire de votre propre rapport
 
 ## Commandes utiles
 
-### Opérations basiques
+### Actions basiques
 
 - Pour insérer une image : utiliser la commande fournie en exemple dans le rapport, modifier la taille de l'image avec *width = ...* soit par exemple *width=1\textwidth*
 ```latex
@@ -39,7 +39,7 @@ Copier le fichier ```centrale.sty``` dans le répertoire de votre propre rapport
 \end{figure}
 ```
 
-- Pour insérer du code : soit avec ```listing``` soit avec ```minted```
+- Pour insérer du code : soit avec ```listing``` soit avec ```minted```. Attention : pour utiliser ```minted``` il vous faudra soit utiliser *Overleaf* (qui est très permissif niveau compilation), soit compiler ```pdflatex``` avec l'option ```--shell-escape```. Reportez-vous à la doc de votre éditeur LaTeX pour plus d'informations ;
 
 - Pour faire référence à une figure : utiliser ```\reff{fig:id-de-la-figure}```
 
