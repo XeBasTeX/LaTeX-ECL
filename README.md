@@ -1,13 +1,13 @@
 # Paquet LaTeX de l'École centrale de Lyon
 
-[![](https://img.shields.io/badge/donate-paypal-46AFE0.svg)](https://www.paypal.me/bastienlaville)
-![](https://img.shields.io/github/release/XeBasTeX/LaTeX-ECL.svg)
-![](https://img.shields.io/github/last-commit/XeBasTeX/LaTeX-ECL.svg)
-![](https://img.shields.io/github/license/XeBasTeX/LaTeX-ECL.svg)
-![](https://img.shields.io/github/languages/code-size/XeBasTeX/LaTeX-ECL.svg)
+[![Faites-moi un don ici !](https://img.shields.io/badge/donate-paypal-46AFE0.svg)](https://www.paypal.me/bastienlaville)
+![Numéro de la version](https://img.shields.io/github/release/XeBasTeX/LaTeX-ECL.svg)
+![Dernière modification](https://img.shields.io/github/last-commit/XeBasTeX/LaTeX-ECL.svg)
+![Licence MIT](https://img.shields.io/github/license/XeBasTeX/LaTeX-ECL.svg)
+![Langage du projet](https://img.shields.io/github/languages/code-size/XeBasTeX/LaTeX-ECL.svg)
 
 <div align="center">
-  <img src="https://www.ec-lyon.fr/sites/default/files/legacy-files/logo_quadri.jpg">
+  <img alt= "Logo du paquet centrale.sty" src="eps/centrale_sty_logo.png">
 </div>
 
 -----------------
