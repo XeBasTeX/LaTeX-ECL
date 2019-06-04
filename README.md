@@ -7,7 +7,7 @@
 ![Langage du projet](https://img.shields.io/github/languages/code-size/XeBasTeX/LaTeX-ECL.svg)
 
 <div align="center">
-  <img alt= "Logo du paquet centrale.sty" src="eps/centrale_sty_logo.png">
+  <img title="Logo du paquet centrale.sty" alt= "Logo du paquet centrale.sty" src="eps/centrale_sty_logo.png">
 </div>
 
 -----------------
