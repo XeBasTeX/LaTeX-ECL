@@ -81,7 +81,7 @@ Je tiens à remercier en particulier, par ordre chornologique de contributions d
 
 ## À propos de l'auteur
 
-Bastien Laville dit le Makzer (président de la PAO mandat 2018 - 2019, Webmestre de la Commuz' 2020, club cocktail et club cuisine) en 2A à l'ECL.
+Bastien Laville dit le Makzer (ancien président de la PAO mandat 2018 - 2019) en 2A à l'ECL.
 
 ## Distribution et license
 
