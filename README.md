@@ -83,6 +83,6 @@ Je tiens à remercier en particulier, par ordre chornologique de contributions d
 
 Bastien Laville dit le Makzer (ancien président de la PAO mandat 2018 - 2019) en 2A à l'ECL.
 
-## Distribution et license
+## Distribution et licence
 
-License [MIT](https://choosealicense.com/licenses/mit/) - Bastien Laville @ PAO
+Licence [MIT](https://choosealicense.com/licenses/mit/) - Bastien Laville @ PAO
