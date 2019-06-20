@@ -98,8 +98,9 @@
 
 \definecolor{CentraleRed}{rgb}{0.558,0.09, 0.18}
 \definecolor{CentraleGray}{rgb}{0.67,0.67, 0.67}
-\definecolor{CentraleBlue}{RGB}{0,67,89}
 \definecolor{CentraleGrayEq}{RGB}{66,66,66}
+\definecolor{CentraleGrayLight}{gray}{0.92} 
+\definecolor{CentraleBlue}{RGB}{0,67,89}
 \definecolor{matlabGreen}{RGB}{28,172,0} % Pour le listing des codes
 \definecolor{matlabLilas}{RGB}{170,55,241}
 
@@ -113,6 +114,15 @@
 \captionsetup[table]{labelfont={CaptionCentrale,bf}}
 \captionsetup[figure]{labelfont={CaptionCentrale,bf}}
 \captionsetup[subfigure]{labelfont=bf,textfont=sf}
+
+
+%------------------------------------------DES CADRES POUR METTRE DE L'EMPHASE------------------------------------------%
+
+
+\newenvironment{cadregris}{ 
+\def\FrameCommand{{\color{CentraleGray}\vrule width 3pt}\colorbox{CentraleGrayLight}}% 
+\MakeFramed {\advance\hsize-\width \FrameRestore}}% 
+{\endMakeFramed}
 
 
 %------------------------------------------RACCOURCIS   MATHEMATIQUES------------------------------------------%

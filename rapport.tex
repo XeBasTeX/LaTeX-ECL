@@ -14,10 +14,11 @@
 }
 
 \DeclareGraphicsRule{.ai}{pdf}{.ai}{} % Pour insérer des documents .ai
-\graphicspath{ {./img/} {./eps/} {./fig/}} % Pour ne pas avoir à ajouter eps/ton-image.jpg
+\graphicspath{{./img/} {./eps/} {./fig/}} % Pour ne pas avoir à ajouter eps/ton-image.jpg
 
 % ------------- Packages spéciaux, nécessaires pour ce rapport, à insérer ici ------------- 
 %\usepackage{minted}
+
 
 \begin{document}
 
@@ -36,7 +37,7 @@
 
     % Titre
     \rule{\linewidth}{0.5mm} \\[0.4cm]
-    { \huge \bfseries Titre du rapport éventuellement en plusieurs lignes \\[0.4cm] }
+    { \huge \bfseries Titre du rapport éventuellement en plusieurs lignes. \\[0.4cm] }
     \rule{\linewidth}{0.5mm} \\[1.5cm]
 
     % Auteur(es) et encadrant(es)
@@ -45,9 +46,9 @@
       \begin{flushleft} \large
         \emph{Auteurs :}\\
         M\up{me} Prénom \textsc{Nom}\\
-        M. Prénom \textsc{Nom}\\
-        M. Prénom \textsc{Nom}\\
-        M. Prénom \textsc{Nom}
+        M.~Prénom \textsc{Nom}\\
+        M.~Prénom \textsc{Nom}\\
+        M.~Prénom \textsc{Nom}
       \end{flushleft}
     \end{minipage}%
     \begin{minipage}{0.4\textwidth}
@@ -72,7 +73,7 @@
 
 \thispagestyle{empty}
 \tableofcontents
-%\newpage
+\newpage
 
 % --------------------------------------------------------------
 %                         Début du corps
@@ -80,6 +81,7 @@
 
 \section{Introduction}
 
+\lipsum[1]
 
 
 
@@ -101,7 +103,7 @@ Pour faire des dérivations :
 
 
 
-Pour faire des intégrales, le d de la différentielle est écrit avec la commande \texttt{ud} :
+Pour faire des intégrales, le d de la différentielle est écrit avec la commande \texttt{\textbackslash ud} :
 
 \[
     \int_0^T f(t) \ud t = 0
@@ -116,15 +118,25 @@ Pour utiliser des opérateurs différentiels:
 \]
 
 
+\subsection{Une autre sous-partie}
+
+Pour mettre un encadré gris qui met un peu d'emphase :
+
+\begin{cadregris}
+
+Par exemple.
+
+\end{cadregris}
+
 
 
 Pour introduire une figure : 
 
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=0.3\textwidth]{example-image-a}
+    \includegraphics[width=0.2\textwidth]{example-image-a}
     \caption{Insérer ici le sous-titre.}
-    \label{fig:id-de-la-figure}
+    \label{fig:}
 \end{figure}
 
 
@@ -132,7 +144,7 @@ Pour introduire une figure :
 
 Pour introduire une table : 
 
-\begin{table}[!ht]
+\begin{table}[ht!]
 \begin{center}
 \begin{tabular}{@{}llllllll@{}}
 \toprule
@@ -145,7 +157,7 @@ Un autre &  &  &  &  &  &  & \\ \bottomrule
 
 
 
-Et pour introduire du code informatique (décommentez + importez minted) :
+Et pour introduire du code informatique (décommenter + importer minted) :
 
 % Pour introduire du code informatique (décommenter)
 %\begin{listing}[ht]
@@ -170,7 +182,7 @@ Et pour introduire du code informatique (décommentez + importez minted) :
 % --------------------------------------------------------------
 
 \section{Conclusion}
-\lipsum[1]
+\lipsum[3]
 
 
 % --- Biblio par .bib

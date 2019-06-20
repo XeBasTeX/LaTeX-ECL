@@ -61,6 +61,8 @@ Copier le fichier ```centrale.sty``` dans le répertoire de votre propre rapport
 
 ```\derp{f}{x}``` permet de taper la dérivée partielle de la fonction ```f``` par rapport à ```x```
 
+- les opérateurs différentiels tels que rot ou div sont disponibles. Notez que ces commandes sont compatibles avec l'utilisation du package ```physics```.
+
 ## Ressources utiles (et pour aller plus loin)
 
 - un peu de typographie française ;
