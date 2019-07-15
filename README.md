@@ -20,7 +20,7 @@ Télécharger le dossier, le placer dans le sous-dossier de votre choix et modif
 
 ### Pour utiliser seulement le paquet
 
-Copier le fichier ```centrale.sty``` dans le répertoire de votre propre rapport et utiliser dans le code de votre propre rapport avec la commande suivante, à insérer dans le préambule :
+Copier le fichier ```centrale.sty``` dans le répertoire de votre propre rapport et utiliser le dans le code de votre fichier ```tex``` avec la commande suivante, à insérer dans le préambule :
 ```latex
 \usepackage{centrale}
 ```
@@ -55,13 +55,13 @@ Copier le fichier ```centrale.sty``` dans le répertoire de votre propre rapport
 
 ```\supt{texte au dessus}``` permet d'écrire de la même façon un indice supérieur : filtre non-causal ```W\sub{nc}```
 
-```\ud``` permet d'écrire proprement une différentielle, par exemple dans une intégrale : ```\int f(x) \ud x```
+```\ud``` permet d'écrire proprement une différentielle (avec une espace avant le d), par exemple dans une intégrale : ```\int f(x) \ud x```
 
 ```\derd{f}{x}``` permet de taper la dérivée droite de la fonction ```f``` par rapport à ```x```
 
 ```\derp{f}{x}``` permet de taper la dérivée partielle de la fonction ```f``` par rapport à ```x```
 
-- les opérateurs différentiels tels que rot ou div sont disponibles. Notez que ces commandes sont compatibles avec l'utilisation du package ```physics```.
+- les opérateurs différentiels tels que rot ou div sont disponibles. Notez que ces commandes sont compatibles avec le paquet ```physics```.
 
 ## Ressources utiles (et pour aller plus loin)
 
@@ -70,8 +70,8 @@ Copier le fichier ```centrale.sty``` dans le répertoire de votre propre rapport
 
 ## Comment contribuer ?
 
-- Contactez-moi pour devenir un collaborateur du projet, notamment sur la branche *dev* ;
-- Vous pouvez m'envoyer vos suggestions ou modifications à mon adresse centralienne, en me cherchant depuis l'annuaire de [Zimbra](https://messagerie.ec-lyon.fr/zimbra).
+- contactez-moi pour devenir un collaborateur du projet, notamment sur la branche *dev* ;
+- vous pouvez m'envoyer vos suggestions ou modifications à mon adresse centralienne, en me cherchant depuis l'annuaire de [Zimbra](https://messagerie.ec-lyon.fr/zimbra).
 
 ## Crédits
 
@@ -83,7 +83,7 @@ Je tiens à remercier en particulier, par ordre chornologique de contributions d
 
 ## À propos de l'auteur
 
-Bastien Laville dit le Makzer (ancien président de la PAO mandat 2018 - 2019) en 2A à l'ECL.
+Bastien Laville dit le Makzer (ancien président de la PAO mandat 2018 - 2019) en 3A à l'ECL.
 
 ## Distribution et licence
 
