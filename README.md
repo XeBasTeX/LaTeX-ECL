@@ -66,7 +66,7 @@ Copier le fichier ```centrale.sty``` dans le répertoire de votre propre rapport
 ## Ressources utiles (et pour aller plus loin)
 
 - un peu de typographie française ;
-- 10 règles fondamentales en LaTeX disponible [ici](faculty.math.illinois.edu/~hildebr/tex/tips-topten.html)
+- 10 règles fondamentales en LaTeX disponible [ici](https://faculty.math.illinois.edu/~hildebr/tex/tips-topten.html)
 
 ## Comment contribuer ?
 
