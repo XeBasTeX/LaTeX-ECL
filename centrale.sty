@@ -96,13 +96,13 @@
 
 %------------------------------------------DÉFINITIONS DES COULEURS------------------------------------------%
 
-\definecolor{CentraleRed}{rgb}{0.558,0.09, 0.18}
-\definecolor{CentraleGray}{rgb}{0.67,0.67, 0.67}
-\definecolor{CentraleGrayEq}{RGB}{66,66,66}
+\definecolor{CentraleRed}{rgb}{0.558, 0.09, 0.18}
+\definecolor{CentraleGray}{rgb}{0.67, 0.67, 0.67}
+\definecolor{CentraleGrayEq}{RGB}{66, 66, 66}
 \definecolor{CentraleGrayLight}{gray}{0.92} 
-\definecolor{CentraleBlue}{RGB}{0,67,89}
-\definecolor{matlabGreen}{RGB}{28,172,0} % Pour le listing des codes
-\definecolor{matlabLilas}{RGB}{170,55,241}
+\definecolor{CentraleBlue}{RGB}{0, 67, 89}
+\definecolor{matlabGreen}{RGB}{28, 172, 0} % Pour le listing des codes
+\definecolor{matlabLilas}{RGB}{170, 55, 241}
 
 
 %------------------------------------------SECTIONS, FIGURES ET TABLEAUX------------------------------------------%
@@ -187,36 +187,43 @@
 
 %------- Notation des ensembles
 
-\newcommand{\A}{\ensuremath{\mathcal{A}}}
-\newcommand{\R}{\ensuremath{\mathbb{R}}}
-\newcommand{\CC}{\ensuremath{\mathbb{C}}}
-\newcommand{\N}{\ensuremath{\mathbb{N}}}
-\newcommand{\K}{\ensuremath{\mathbb{K}}}
-\newcommand{\Lens}{\mathcal{L}} % Lens pour "l'ENSemble L" 
-\newcommand{\Pens}{\mathcal{P}} % Pareil
-\newcommand{\M}{\ensuremath{\mathcal{M}}}
-\newcommand{\B}{\ensuremath{\mathcal{B}}}
-\newcommand{\dom}{\ensuremath{\mathcal{D}}}
-\newcommand{\surf}{\ensuremath{\mathcal{S}}}
-\newcommand{\cont}{\ensuremath{\mathcal{C}}}
+\newcommand{\A} {\ensuremath{\mathcal{A}}}
+\newcommand{\R} {\ensuremath{\mathbb{R}}}
+\newcommand{\CC} {\ensuremath{\mathbb{C}}}
+\newcommand{\N} {\ensuremath{\mathbb{N}}}
+\newcommand{\K} {\ensuremath{\mathbb{K}}}
+\newcommand{\Lens} {\mathcal{L}} % Lens pour "l'ENSemble L" 
+\newcommand{\Pens} {\mathcal{P}} % Pareil pour P
+\newcommand{\M} {\ensuremath{\mathcal{M}}}
+\newcommand{\B} {\ensuremath{\mathcal{B}}}
+\newcommand{\dom} {\ensuremath{\mathcal{D}}}
+\newcommand{\surf} {\ensuremath{\mathcal{S}}}
+\newcommand{\cont} {\ensuremath{\mathcal{C}}}
+
+
+%------- Abréviations, langages et programme utiles
+
+\newcommand{\ecl}{l'École centrale de Lyon}
+\newcommand{\matlab}{\textsc{Matlab}}
+\newcommand{\python}{\emph{python}}
 
 
 %------- Fonctions de traitement du signal
 
-\DeclareMathOperator{\sinc}{sinc}
-\DeclareMathOperator{\sgn}{\text{sgn}}
-\DeclareMathOperator*{\argmax}{argmax}
-\DeclareMathOperator*{\argmin}{argmin}
-\newcommand{\vect}{\text{Vect}}
-\newcommand{\esp}{\ensuremath{\mathbb{E}}}
-\newcommand{\hilbert}{\ensuremath{\mathcal{H}}}
-\newcommand{\fourier}{\ensuremath{\mathcal{F}}}
+\DeclareMathOperator{\sinc} {sinc}
+\DeclareMathOperator{\sgn} {\text{sgn}}
+\DeclareMathOperator*{\argmax} {argmax}
+\DeclareMathOperator*{\argmin} {argmin}
+\newcommand{\vect} {\text{Vect}}
+\newcommand{\esp} {\ensuremath{\mathbb{E}}}
+\newcommand{\hilbert} {\ensuremath{\mathcal{H}}}
+\newcommand{\fourier} {\ensuremath{\mathcal{F}}}
 
 % Ces 4 lignes définissent la lettre sha pour le peigne de Dirac (et pas le vieux "Pgn" comme "pougne")
-\DeclareFontFamily{U}{wncy}{}
-\DeclareFontShape{U}{wncy}{m}{n}{<->wncyr10}{}
-\DeclareSymbolFont{mcy}{U}{wncy}{m}{n}
-\DeclareMathSymbol{\Sh}{\mathord}{mcy}{"58} 
+\DeclareFontFamily{U} {wncy}{}
+\DeclareFontShape{U} {wncy}{m}{n}{<->wncyr10}{}
+\DeclareSymbolFont{mcy} {U}{wncy}{m}{n}
+\DeclareMathSymbol{\Sh} {\mathord}{mcy}{"58} 
 
 %------- Autres
 
