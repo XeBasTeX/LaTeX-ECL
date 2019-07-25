@@ -51,15 +51,15 @@ Copier le fichier ```centrale.sty``` dans le répertoire de votre propre rapport
 
 ### Macros
 
-```\subt{texte en dessous}``` permet d'écrire proprement un indice de notation (donc pas une variable). Par exemple T_c signifie << température chaude >>, c n'est pas une variable mais bien l'abréviation de chaud. Il faut donc noter ```T\sub{c}```
+- ```\subt{texte en dessous}``` permet d'écrire proprement un indice de notation (donc pas une variable). Par exemple T_c signifie << température chaude >>, c n'est pas une variable mais bien l'abréviation de chaud. Il faut donc noter ```T\sub{c}```
 
-```\supt{texte au dessus}``` permet d'écrire de la même façon un indice supérieur : filtre non-causal ```W\sub{nc}```
+- ```\supt{texte au dessus}``` permet d'écrire de la même façon un indice supérieur : filtre non-causal ```W\sub{nc}```
 
-```\ud``` permet d'écrire proprement une différentielle (avec une espace avant le d), par exemple dans une intégrale : ```\int f(x) \ud x```
+- ```\ud``` permet d'écrire proprement une différentielle (avec une espace avant le d), par exemple dans une intégrale : ```\int f(x) \ud x```
 
-```\derd{f}{x}``` permet de taper la dérivée droite de la fonction ```f``` par rapport à ```x```
+- ```\derd{f}{x}``` permet de taper la dérivée droite de la fonction ```f``` par rapport à ```x```
 
-```\derp{f}{x}``` permet de taper la dérivée partielle de la fonction ```f``` par rapport à ```x```
+- ```\derp{f}{x}``` permet de taper la dérivée partielle de la fonction ```f``` par rapport à ```x```
 
 - les opérateurs différentiels tels que rot ou div sont disponibles. Notez que ces commandes sont compatibles avec le paquet ```physics```.
 
