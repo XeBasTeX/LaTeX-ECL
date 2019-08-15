@@ -145,21 +145,24 @@ Pour introduire une figure :
 Pour introduire une table : 
 
 \begin{table}[ht!]
-\begin{center}
-\begin{tabular}{@{}llllllll@{}}
-\toprule
-Un truc &  &  &  &  &  &  &  \\ \midrule
-Un autre &  &  &  &  &  &  & \\ \bottomrule
-\end{tabular}
-\caption{Un tableau \label{tab:id-de-la-table}}
-\end{center}
+	\begin{center}
+		\begin{tabular}{@{}llllllll@{}}
+			\toprule
+			Un truc &  &  &  &  &  &  &  \\ \midrule
+			Un autre &  &  &  &  &  &  & \\ \bottomrule
+		\end{tabular}
+		\caption{Un tableau \label{tab:id-de-la-table}}
+		\label{tab:}
+	\end{center}
 \end{table}
 
 
 
 Et pour introduire du code informatique (décommenter + importer minted) :
 
-% Pour introduire du code informatique (décommenter)
+% Pour introduire du code informatique (décommenter, notez bien que le paquet minted est utilisable uniquement
+% si vous spécifiez l'option --shell-escape lors de la compilation)
+%
 %\begin{listing}[ht]
 %\inputminted[linenos=true, breaklines,frame=lines,framesep=2mm]{python}{code/}
 %\caption{Du code informatique}
