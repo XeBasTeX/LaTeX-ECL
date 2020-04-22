@@ -87,4 +87,4 @@ Bastien Laville dit le Makzer (ancien président de la PAO mandat 2018 - 2019) e
 
 ## Distribution et licence
 
-Licence [MIT](https://choosealicense.com/licenses/mit/) - Bastien Laville @ PAO
+Licence [MIT](https://choosealicense.com/licenses/mit/) - Bastien @ PAO
