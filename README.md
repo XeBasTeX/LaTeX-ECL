@@ -71,20 +71,20 @@ Copier le fichier ```centrale.sty``` dans le répertoire de votre propre rapport
 ## Comment contribuer ?
 
 - contactez-moi pour devenir un collaborateur du projet, notamment sur la branche *dev* ;
-- vous pouvez m'envoyer vos suggestions ou modifications à mon adresse centralienne, en me cherchant depuis l'annuaire de [Zimbra](https://messagerie.ec-lyon.fr/zimbra).
+- vous pouvez m'envoyer vos suggestions ou modifications à mon adresse centralienne, en me cherchant depuis l'annuaire de [Zimbra](https://messagerie.ec-lyon.fr/zimbra) ou par DM Facebook.
 
 ## Crédits
 
-Je tiens à remercier en particulier, par ordre chornologique de contributions dans le projet :
+Je tiens à remercier en particulier, par ordre chronologique de contributions dans le projet :
 - Nicolas Gameiro dont la première feuille de style a fourni une excellente base pour la suite ;
 - Gauthier Fanucci dont le rapport de PAr a permis de tirer quelques *features* intéressantes ;
-- l'équipe de la PAO mandat 2019 - 2020 et plus spécialement Yann Zerrouk, Olivia Jeanne et Blaise (chais-pas-ton-nom déso) pour leurs chtites contributions ;
+- l'équipe de la PAO mandat 2019 - 2020 et plus spécialement Yann Zerrouk, Olivia Jeanne et Blaise pour leurs chtites contributions ;
 - les bêta-testeurs du code, à savoir personne.
 
 ## À propos de l'auteur
 
-Bastien Laville dit le Makzer (ancien président de la PAO mandat 2018 - 2019) en 3A à l'ECL.
+Bastien Laville, ancien étudiant à l'ECL (2017E, diplômé 2020).
 
 ## Distribution et licence
 
-Licence [MIT](https://choosealicense.com/licenses/mit/) - Bastien @ PAO
+Licence [MIT](https://choosealicense.com/licenses/mit/) - Bastien
