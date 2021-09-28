@@ -71,19 +71,20 @@ Copier le fichier ```centrale.sty``` dans le répertoire de votre propre rapport
 ## Comment contribuer ?
 
 - contactez-moi pour devenir un collaborateur du projet, notamment sur la branche *dev* ;
-- vous pouvez m'envoyer vos suggestions ou modifications à mon adresse centralienne, en me cherchant depuis l'annuaire de [Zimbra](https://messagerie.ec-lyon.fr/zimbra) ou par DM Facebook.
+- vous pouvez m'envoyer vos suggestions ou modifications à mon adresse mail, disponible sur [mon site Web](https://www-sop.inria.fr/members/Bastien.Laville/) ou par DM Facebook.
 
 ## Crédits
 
+Le paquet a été réalisé au cours de l'année 2017 à partir de plusieurs paquets d'anciens élèves et des feuilles de style d'autres écoles.
 Je tiens à remercier en particulier, par ordre chronologique de contributions dans le projet :
-- Nicolas Gameiro dont la première feuille de style a fourni une excellente base pour la suite ;
-- Gauthier Fanucci dont le rapport de PAr a permis de tirer quelques *features* intéressantes ;
-- l'équipe de la PAO mandat 2019 - 2020 et plus spécialement Yann Zerrouk, Olivia Jeanne et Blaise pour leurs chtites contributions ;
+- Nicolas Gameiro (E2017) dont la première feuille de style a fourni une excellente base pour la suite ;
+- Gauthier Fanucci (E2013) dont le rapport de PAr a permis de tirer quelques *features* intéressantes ;
+- l'équipe de la PAO mandat 2019 - 2020 et plus spécialement Yann Zerrouk, Olivia Jeanne et Blaise LeCocquil (E2018) pour leurs chtites contributions ;
 - les bêta-testeurs du code, à savoir personne.
 
 ## À propos de l'auteur
 
-Bastien Laville, ancien étudiant à l'ECL (2017E, diplômé 2020).
+Bastien Laville, ancien étudiant à l'ECL (2017E, diplômé 2020). Je ne contribue plus au projet, vous pouvez cependant m'écrire un mail pour récupérer mon paquet Inria.
 
 ## Distribution et licence
 
