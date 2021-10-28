@@ -79,7 +79,7 @@ Le paquet a été réalisé au cours de l'année 2017 à partir de plusieurs paq
 Je tiens à remercier en particulier, par ordre chronologique de contributions dans le projet :
 - Nicolas Gameiro (E2017) dont la première feuille de style a fourni une excellente base pour la suite ;
 - Gauthier Fanucci (E2013) dont le rapport de PAr a permis de tirer quelques *features* intéressantes ;
-- l'équipe de la PAO mandat 2019 - 2020 et plus spécialement Yann Zerrouk, Olivia Jeanne et Blaise LeCocquil (E2018) pour leurs chtites contributions ;
+- l'équipe de la PAO mandat 2019 - 2020 et plus spécialement Yann Zerrouk, Olivia Jeanne et Blaise Le Coquil (E2018) pour leurs chtites contributions ;
 - les bêta-testeurs du code, à savoir personne.
 
 ## À propos de l'auteur
